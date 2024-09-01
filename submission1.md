@@ -31,8 +31,6 @@ This is crucial, for example, in open-source and collaborative projects.
 
 ## Merge strategies 
 
-**Explicit merges**
-
 ### Standard Merge
 
 The commits of branch A are added to the branch B. A new commit is created. A new **merge commit** is created. The commit history of A becomes a part of B's commit history. 
