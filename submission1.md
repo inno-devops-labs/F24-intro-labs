@@ -47,5 +47,4 @@ This strategy reapplies the commits from a feature branch onto the base branch, 
 
 ### Why Standard Merge is Preferred:
 In collaborative environments, the standard merge strategy is often preferred because it preserves the full history of all changes, providing a complete record of what has happened in the project. This transparency is crucial when multiple contributors are working on the same codebase, as it helps track changes and resolve conflicts more effectively. Despite potentially cluttering the commit history, the clarity and traceability offered by standard merges outweigh the downsides, making it a safer and more reliable choice for team projects.
-
 ---
