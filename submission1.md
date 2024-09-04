@@ -15,7 +15,6 @@ Removes commits from a feature branch onto the base branch tip, making the commi
 
 
 ## Conclusion
-
 The standard merge strategy is often preferred in collaborative environments because it preserves the complete history of changes, 
 making it easier to track project development and resolve conflicts. 
 Squash and rebase have their advantages in terms of maintaining a cleaner and linear commit history, 
