@@ -12,7 +12,7 @@ This lab assignment introduces you to Git and its essential operations. You will
    - **Research**: Learn why commit signing is crucial for verifying the integrity and authenticity of commits.
      - Resources:
        - [GitHub Docs on SSH Commit Verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification)
-       - [Atlassian's Guide to SSH and Git](https://www.atlassian.com/git/tutorials/git-commit)
+       - [Atlassian's Guide to SSH and Git](https://confluence.atlassian.com/bitbucketserver/sign-commits-and-tags-with-ssh-keys-1305971205.html)
    - **Summary**: Create a submission1.md file. Write a brief summary explaining the benefits of signing commits.
 
 2. **Set Up SSH Commit Signing**:
