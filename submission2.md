@@ -15,3 +15,9 @@ https://ipfs.io/ipfs/QmeaMeoLAWpzMck6BuvN1iZVMMyCBaMbhXRVTyaHecsYAQ
 * Cloudflare: 
 https://cloudflare-ipfs.com/ipfs/QmeaMeoLAWpzMck6BuvN1iZVMMyCBaMbhXRVTyaHecsYAQ
 * Influra: https://ipfs.infura.io/ipfs/QmeaMeoLAWpzMck6BuvN1iZVMMyCBaMbhXRVTyaHecsYAQ
+
+### Fleek web deployment
+* IPFS: 
+https://bafybeia3cryhryyfodd3gozd7qoy55zameqrslfr6bpkir7gu3dyygkemi.ipfs.flk-ipfs.io/
+* Fleek: 
+https://hundreds-car-great.on-fleek.app/
