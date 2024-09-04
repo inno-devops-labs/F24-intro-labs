@@ -1,0 +1,8 @@
+The reasons to use sign commits can be summarized into the following concepts:
+1. Personality validation. Verifying the fact that a commit was made by an exact person. In other words, a random person cannot commit to someone's public repository, but your collaborator can set his name and email in a git configuration to fake his personality. Commit signing provides a mechanism to protect your ID through the SSH key.
+2. Authority validation. All the codes changes you can see are really done by a mentioned in a commit person. The code has not been tampered with. There can be now undetected attempts to modify the commit content, history, or authority. 
+3. Best practices. Commit signing is a standard that all many organizations follow to provide security and trust.
+4. Status. As it was mentioned in 'Best practices', 'Verified' flag can tell us about a serious approach of developers. Signed commits maintain a high level of trust and professionalism, all commits are made by a trusted source.
+5. Responsibility. It is crucial for big projects to know a commit's creator. Signed commits provide links from each change to a verified collaborator, thus nobody can frame a colleague.
+6. Security. Signed commites are a protection from hacker attacks that try to insert/delete a dangerous code. Such attacks cannot be implemented while a commit has to be verified.
+To sum up, commit signing is a good practice, especially for large projects and companies, to **protect and confirm your code and to guarantee its reliability and security.**
