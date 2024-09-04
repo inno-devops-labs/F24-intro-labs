@@ -76,4 +76,4 @@
      - Navigate to the "Options" section.
 
      ![alt text](image.png)
-     Done :)
+     Done ;)
