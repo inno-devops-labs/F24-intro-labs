@@ -27,4 +27,4 @@
 - GitHub cannot sign the rebased commits
 
 ### Why the standard merge strategy is often preferred in collaborative environments?
-It provides full visibility of changes, so it's much easier to understand contribution of collaborators, reviewing and troubleshooting.
+It provides full visibility of changes, so it's much easier to understand contribution of collaborators, to review and to troubleshoot.
