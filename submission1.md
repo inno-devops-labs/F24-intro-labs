@@ -51,6 +51,19 @@
 
    - Push the commit with your submission1.md file.
 
+   There is still a problem:
+
+   ```sh
+   $ git commit -S -m "My third signed (and I guess verified) commit message"
+   [Lab1 0f2195a] My third signed (and I guess verified) commit message
+   1 file changed, 1 insertion(+), 1 deletion(-)
+
+   $git verify-commit 0f2195a
+   Good "git" signature for m.brednikov@innopolis.university with ED25519 key <MY_KEY>
+   ```
+
+   So, everything should be fine? Nope, in GitHub, my commit is marked as 'unverified' and I can not understand why. (I added my key 2 times - as authentification and verification keys, but still run into this).
+
 ## Task 2: Merge Strategies in Git
 
 1. **Research Merge Strategies**:
