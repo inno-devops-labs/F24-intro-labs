@@ -16,5 +16,9 @@
   - **Incoming**: 47 KiB/s
   - **Outgoing**: 10 KiB/s
 
+# Task 2: Set Up Project on Fleek
 
+## Fleek Project Information
 
+- **IPFS Link**: [Link](https://ipfs.io/ipfs/bafybeia7wxklalx6vtqluduz4k3jaak2tbwjodiu7lhh3vxcvbniwcs4b4/)
+- **Fleek Domain**: [Link](https://melodic-ability-whispering.on-fleek.app/)
