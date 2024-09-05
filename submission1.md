@@ -26,7 +26,7 @@
 
 # Git Merge Strategy Comparison
 
-## 1. Standard Merge
+1. **Standard Merge**
 
 - **Description**: Combines two branches by creating a merge commit. The merge commit has two parents: the tip of the base branch and the tip of the feature branch.
   
@@ -39,7 +39,7 @@
 
 - **Best for**: Teams that value full traceability and want to keep the history of each branch intact.
 
-## 2. Squash and Merge
+2. **Squash and Merge**
 
 - **Description**: Combines all commits from a feature branch into a single commit before merging. The result is a simplified commit history on the base branch.
   
@@ -53,7 +53,7 @@
 
 - **Best for**: Projects where clean commit history is preferred over detailed tracking of individual changes.
 
-## 3. Rebase and Merge
+3. **Rebase and Merge**
 
 - **Description**: Reapplies commits from a feature branch onto the tip of the base branch. This rewrites the commit history and avoids a merge commit.
   
@@ -67,6 +67,6 @@
 
 - **Best for**: Teams that prefer a clean, linear history and are comfortable resolving rebase conflicts.
 
-## Standard Merge Strategy in Collaborative Environments
+### Standard Merge Strategy in Collaborative Environments
 
-The **Standard Merge** strategy is often preferred in collaborative environments because it preserves the full history of both branches and provides clear visibility into when and how branches were merged. This approach is particularly useful for traceability, as it retains the original context of all changes. While squash and rebase can help simplify history, they can obscure the process of how features were developed and integrated.
+The **Standard Merge** strategy is often preferred in collaborative environments because it preserves the full history of both branches and provides clear visibility into when and how branches were merged.
