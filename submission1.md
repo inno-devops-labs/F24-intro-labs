@@ -1,7 +1,7 @@
-# Task 1
+## Task 1: SSH Commit Signature Verification
 1. To give other people confidence about the origin of a change you have made. So they can trust this commit.
 2. To give ability to a repository administrators to enforce required commit signing on a branch to block all commits that are not signed and verified. So if everybody in the team use signed commits, there is no problem to block commits without sign or verification. And this gives some kind of protection to the repository.
-# Task 2
+## Task 2: Merge Strategies in Git
 ### Standard Merge
 **Pros:**
 - Maintains full commit history
