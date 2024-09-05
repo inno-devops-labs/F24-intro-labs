@@ -28,4 +28,5 @@ However, authors of original commits may disapear. Moreover, it can be hard to d
 
 Since it rewrites commit history and commit hashes, you must use "git push force" to apply changes. IT'S VERY DANGEROUS, and can complicate problemns in collaboration. Therefore, you shouldn't use it on collaboratibe branches.
 
+
 #### The cost of making mistakes in large teams is expensive, so it's preferable to use simple merge strategy with its cons. Rebase is very bad for this purpose. Additionally, merge saves history of both commits, leading to transparency and understanding of the code. While, squash removes it.
