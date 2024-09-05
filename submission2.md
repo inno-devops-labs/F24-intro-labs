@@ -1,16 +1,11 @@
-The SSH key allows you to sign a commit, thereby separating commits not only from different accounts, but also from different devices, separating authors. This allows not only to more accurately determine the personal contribution of each, but also provides additional opportunities to track compromised commits, protecting the project from malicious changes.
+Peers info:
+<img width="1085" alt="Peers" src="https://github.com/user-attachments/assets/20254e90-948a-4195-8e7f-2a52d989b5c9">
 
-Merge strategies
+Bandwith (more about net speed):
+![Bandwidth](https://github.com/user-attachments/assets/3aabb6a6-2632-412c-ada0-b246b09d7651)
 
-Standart Merge:
-pros - shows the history of both branches
-cons - creates a new commit even if the changes can be merged automatically without conflicts
+Verify file hash - QmZe91MhFKXZskqLnYiudYM1eV4PuLQSvHuTFV7xBmCTCZ
+Verify link - https://ipfs.io/ipfs/QmZe91MhFKXZskqLnYiudYM1eV4PuLQSvHuTFV7xBmCTCZ
 
-Squash and Merge:
-pros - keep the commit history on the current branch clean
-cons - no separate commits
-
-Rebase and Merge:
-pros - does not create merge commit
-cons - works only if it can be done as a fast-forward merge
-
+Fleek project hash - bafybeibjhjazzm25cyb3q2pqriqhd56exhybw2j6luvz2mf3ghghgi7sxm
+Fleek domain? - app.fleek.xyz
