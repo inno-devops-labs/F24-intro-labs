@@ -1,0 +1,1 @@
+The SSH key allows you to sign a commit, thereby separating commits not only from different accounts, but also from different devices, separating authors. This allows not only to more accurately determine the personal contribution of each, but also provides additional opportunities to track compromised commits, protecting the project from malicious changes.
