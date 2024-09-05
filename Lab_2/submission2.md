@@ -1,4 +1,6 @@
 # Task 1: Set Up an IPFS Gateway Using Docker
+
+
 ![alt text](image.png)
 
 As you can see, I have 69 peers. 45 kib/s for incoming network traffic and 268 kib/s outgoing traffic.
@@ -12,7 +14,9 @@ URLS:
 
 But unfortunatelly it fails to load the links, giving timeout error. As I understand it's because we loaded file at local machine, instead of loading to ipfs servers.
 
+
 # Task 2: Set Up Project on Fleek.co
+
 
 IPFS: https://ipfs.io/ipfs/bafybeigbvef7nyfm4okrc4jbvielivmpv2c26fzab3irffw5pofxzjeoaq/
 
