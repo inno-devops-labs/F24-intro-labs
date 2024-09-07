@@ -32,3 +32,57 @@ Updated file1.txt
 ```
 This is file 2
 ```
+
+## Task 2: Practice with Git Reset Command
+
+### Steps Taken:
+
+1. Created a new branch:
+   ```
+   git checkout -b git-reset-practice
+   ```
+
+2. Created a series of commits:
+   ```
+   echo "First commit" > file.txt
+   git add file.txt
+   git commit -m "First commit"
+
+   echo "Second commit" >> file.txt
+   git add file.txt
+   git commit -m "Second commit"
+
+   echo "Third commit" >> file.txt
+   git add file.txt
+   git commit -m "Third commit"
+   ```
+
+3. Used git reset --soft:
+   ```
+   git reset --soft HEAD~1
+   ```
+   This moved the HEAD pointer back one commit, but kept the changes in the staging area.
+
+4. Used git reset --hard:
+   ```
+   git reset --hard HEAD~1
+   ```
+   This moved the HEAD pointer back one commit and discarded all changes.
+
+5. Used git reflog to recover commits:
+   ```
+   git reflog
+   git reset --hard 3cc89e3
+   ```
+
+### Explanation of Reset and Reflog Process:
+
+
+
+- `git reset --soft` moves the HEAD pointer to a specified commit, but keeps the changes in the staging area. This is useful when you want to undo commits but keep the changes to recommit them differently.
+
+- `git reset --hard` moves the HEAD pointer to a specified commit and discards all changes. This is useful when you want to completely undo commits and start fresh from a previous state.
+
+- `git reflog` shows a log of all recent actions in the repository. It's extremely useful for recovering lost commits or branches, especially after a hard reset.
+
+By using these commands, we can navigate through our commit history, undo changes, and even recover seemingly lost commits. This demonstrates the power and flexibility of Git in managing project history.
