@@ -68,3 +68,28 @@ DOMAIN: https://melodic-jelly-swift.on-fleek.app/
 # Task 2: Practice with Git Reset Command
 
 
+After creating 3 commits I tried 2 strategies to reset the commit: hard and soft.
+
+`git reset --soft HEAD~1`
+Changed pointer of commit to previous commit and saved changes in stage
+
+```
+$ git reset --soft HEAD~1
+$ git status
+On branch git-reset-practice
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file.txt
+```
+
+Asfter using `git reset --hard HEAD~1` pointer also changed to previous commit, but changes were not saved neither in directory nor in stage.
+
+```
+$ git reset --hard HEAD~1
+HEAD is now at 392c89d First commit
+$ git status
+On branch git-reset-practice
+nothing to commit, working tree clean
+```
+
+After this experiments, I decided to recover my commit. I found its hash using `git reflog` and recovered using `git reset --hard 445fca9` command
