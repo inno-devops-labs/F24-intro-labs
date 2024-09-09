@@ -14,7 +14,7 @@ git cat-file -p 9828d00
 ```
 
 #### Output:
-
+```bash
 tree 380502792a46d8ba9aed53a8c762d99319ce5d80
 parent 15e7e68cc036cb965d8fe09b4a664e0b199104ab
 author Nayalaith <nayallaith@gmail.com> 1725920473 +0300
@@ -27,6 +27,7 @@ gpgsig -----BEGIN SSH SIGNATURE-----
  -----END SSH SIGNATURE-----
 
 Added file2.txt
+```
 
 ### 2. Tree Object
 #### Command:
@@ -35,6 +36,7 @@ git cat-file -p 380502792a46d8ba9aed53a8c762d99319ce5d80
 ```
 
 #### Output:
+```bash
 100644 blob ede183da8ef201e5f5737eea502edc77fd8a9bdc	README.md
 100644 blob 5b3c010a011b95052efe998176ef18ca8efd4adf	file.txt
 100644 blob 4c5fd919d52e3c1b08f7924cfa05d6de100912fd	file1.txt
@@ -42,7 +44,7 @@ git cat-file -p 380502792a46d8ba9aed53a8c762d99319ce5d80
 100644 blob 5738bc15a0416ad2624df13badfb235052777e79	index.html
 100644 blob 7a94f7af59b8968be392288ea03179a24ffc9d9e	lab1.md
 100644 blob 1b99cc0044f93f556a0f6a599c7edf2f33f4944a	lab2.md
-
+```
 ### 3. Blob
 
 #### Command:
@@ -51,6 +53,8 @@ git cat-file -p 4c5fd919d52e3c1b08f7924cfa05d6de100912fd
 ```
 
 #### Output:
+```bash
 
 First file
+```
 
