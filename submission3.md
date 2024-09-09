@@ -65,7 +65,7 @@ PS C:\Users\mixai\Education\IntroToDevOps\F24-intro-labs> git cat-file -p e81a12
 
 5. Find HEAD history and recover commit
    
-    ''sh
+    '''sh
     git reflog
     
     Output
