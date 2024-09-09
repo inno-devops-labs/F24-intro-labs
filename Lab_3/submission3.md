@@ -92,4 +92,4 @@ On branch git-reset-practice
 nothing to commit, working tree clean
 ```
 
-After this experiments, I decided to recover my commit. I found its hash using `git reflog` and recovered using `git reset --hard 445fca9` command
+After this experiments, I decided to recover my commit. I found its hash using `git reflog` (this command shows history of actions in the repo including hashes, which we can use to reset commits after hard reset) and recovered using `git reset --hard 445fca9` command
