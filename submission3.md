@@ -54,6 +54,7 @@ PS C:\Users\mixai\Education\IntroToDevOps\F24-intro-labs> git cat-file -p e81a12
      ```
 
  3. Navigate the commit history
+    
       '''sh
       git reset --soft HEAD~1
       git reset --hard HEAD~1
@@ -62,9 +63,9 @@ PS C:\Users\mixai\Education\IntroToDevOps\F24-intro-labs> git cat-file -p e81a12
      - soft rolled back 1 commit, but kept the changes
      - hard rolled back 1 commit, but delete the changes
 
- 4. Find HEAD history and recover commit
+  4. Find HEAD history and recover commit
    
-     '''sh
+     '''bash
      git reflog
      
      Output
