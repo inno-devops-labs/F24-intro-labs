@@ -34,9 +34,9 @@ PS C:\Users\mixai\Education\IntroToDevOps\F24-intro-labs> git cat-file -p e81a12
 **Task2 Practice**
 
 1. Create a new branch git-reset-practice
-    '''sh
+    ```sh
     git checkout -b git-reset-practice
-    '''
+    ```
 
 2. Created 3 commits sequentially filling the file.txt with text
      ```sh
