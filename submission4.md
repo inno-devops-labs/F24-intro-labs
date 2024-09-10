@@ -6,7 +6,7 @@ I have Manjaro distribution, and Manjaro is Arch-based system and not Debian-bas
 
 2. **Binary file:** Manjaro's binary files are .pkg.tar.zst (not .deb). I downloaded file with 'htop' package through wget: `wget 'https://ftp5.gwdg.de/pub/linux/archlinux/extra/os/x86_64/htop-3.3.0-3-x86_64.pkg.tar.zst'`. I got a file: htop-3.3.0-3-x86_64.pkg.tar.zst.
 
-3. **Package Index:** `repo-add ~/local-pacman-repo/custom.db.tar.gz ~/local-pacman-repo/*.pkg.tar.zst`. I got the following files: custom.db@, custom.db.tar.gz,  custom.files@,  custom.files.tar.gz, and htop-3.3.0-3-x86_64.pkg.tar.zst. custom.db.tar.gz file will allow pacman to find packages in my local repository.
+3. **Package Index:** `repo-add ~/local-pacman-repo/custom.db.tar.gz ~/local-pacman-repo/*.pkg.tar.zst`. I got the following files: custom.db@, custom.db.tar.gz,  custom.files@,  custom.files.tar.gz, and htop-3.3.0-3-x86_64.pkg.tar.zst. **custom.db.tar.gz** file will allow pacman to find packages in my local repository.
 
 4. **Local Repository addition to my sources list (pacman.conf file):** in the `/etc/pacman.conf` I added the following rows and then updated the package database:
 ```
@@ -124,7 +124,7 @@ git
 ... etc ...
 ```
 
-2. **Simulation.** Arch's pacman doesn't have a single command that exactly matches 'apt-get install -s ...', but using a combination of pactree, pacman -Si, and pacman -S can provide all required dependencies. To demonstrate simulating, I deleted some packages from yay dependencies (git), so that they could be displayed as "to be installed for yay package":
+2. **Simulation.** Arch's pacman doesn't have a single command that exactly matches 'apt-get install -s ...', but using a combination of pactree, pacman -Si, and pacman -S can provide all required dependencies. To demonstrate simulating, I deleted some packages from yay dependencies (git), so that they could be displayed as "to be installed for yay package" (Packages row):
 
 ```
 sudo pacman -S yay
@@ -139,17 +139,17 @@ Total Installed Size:  37.49 MiB
 :: Proceed with installation? [Y/n]
 ```
 
-Here, for yay package, the requirement paclages are:
+Here, for yay package, the requirement packages are:
 - git-2.46.0-1
 - perl-error-0.17029-6  
 - perl-mailtools-2.21-8
 
-Thus, Dependencies can be checked through "pacman -Si 'package-name'", "pacman -Sii 'package-name'", "pactree 'package-name'". Before installing a package "sudo pacman -S 'package-name'" will providee a list with all packages to be installed, and during the onstallation we can see 'Opptional dependencies'.
+Thus, Dependencies can be checked through "pacman -Si 'package-name'", "pacman -Sii 'package-name'", "pactree 'package-name'". Before installing a package "sudo pacman -S 'package-name'" will providee a list with all packages to be installed, and during the installation we can see 'Opptional dependencies'.
 
 
 ## Task 3
 
-Manjaro doesn't have a command similar to 'sudo apt-mark hold your-package-name', but the pacman.conf can keep package's current state from being changed.
+Manjaro doesn't have a command similar to 'sudo apt-mark hold your-package-name', but the pacman.conf can make a package keep its current state and not be changed.
 
 1. Install the package: `sudo pacman -S nano`
 2. Hold the package (through configuration file): add the package to the IgnorePkg list in /etc/pacman.conf.
@@ -159,7 +159,7 @@ Manjaro doesn't have a command similar to 'sudo apt-mark hold your-package-name'
 IgnorePkg   = nano
 ```
 
-Now, the nano package will not be upgraded untill it is in the list. System update (`sudo pacman -Syu`)also doesn't have rights to update nano. Manual update (`sudo pacman -Sy nano`) has a warning:
+Now, the nano package will not be upgraded untill it is in the list. System update (`sudo pacman -Syu`) also doesn't have rights to update nano. Manual update (`sudo pacman -Sy nano`) has a warning:
 ```
 sudo pacman -Sy nano
 :: Synchronizing package databases...
@@ -168,6 +168,33 @@ sudo pacman -Sy nano
  extra is up to date
  community is up to date
  multilib is up to date
-:: nano is in IgnorePkg/IgnoreGroup. Install anyway? [Y/n] n
+:: nano is in IgnorePkg/IgnoreGroup. Install anyway? [Y/n] y
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) nano-8.1-1
+
+Total Installed Size:  2.56 MiB
+Net Upgrade Size:      0.00 MiB
+
+:: Proceed with installation? [Y/n] n
 ```
-3. Unhold the package: Remove nano from IgnorePkg list: `# IgnorePkg   = `
+3. Unhold the package: Remove nano from IgnorePkg list: `# IgnorePkg   = `. The system is able to update nano during packages updating and manual update doesn't ask twice:
+```
+sudo pacman -Sy nano
+:: Synchronizing package databases...
+ custom is up to date
+ core is up to date
+ extra is up to date
+ community is up to date
+ multilib is up to date
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) nano-8.1-1
+
+Total Installed Size:  2.56 MiB
+Net Upgrade Size:      0.00 MiB
+
+:: Proceed with installation? [Y/n]
+```
