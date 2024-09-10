@@ -83,4 +83,87 @@
    ```sh
    sudo apt install google-chrome-stable
    ```
-   
+
+# Task 2
+- I selected the package `git` for the simulation
+
+1. ```sh
+   apt-cache showpkg git
+   ```
+
+   1 of outputs example:
+   ```sh
+   Package: git
+Versions: 
+1:2.34.1-1ubuntu1.11 (/var/lib/apt/lists/ru.archive.ubuntu.com_ubuntu_dists_jammy-updates_main_binary-amd64_Packages) (/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_jammy-security_main_binary-amd64_Packages)
+ Description Language: 
+                 File: /var/lib/apt/lists/ru.archive.ubuntu.com_ubuntu_dists_jammy_main_binary-amd64_Packages
+                  MD5: c1f968556452a190fe359bffd151c012
+ Description Language: 
+                 File: /var/lib/apt/lists/ru.archive.ubuntu.com_ubuntu_dists_jammy_main_binary-i386_Packages
+                  MD5: c1f968556452a190fe359bffd151c012
+ Description Language: en_GB
+                 File: /var/lib/apt/lists/ru.archive.ubuntu.com_ubuntu_dists_jammy_main_i18n_Translation-en%5fGB
+                  MD5: c1f968556452a190fe359bffd151c012
+ Description Language: en
+                 File: /var/lib/apt/lists/ru.archive.ubuntu.com_ubuntu_dists_jammy_main_i18n_Translation-en
+                  MD5: c1f968556452a190fe359bffd151c012
+ Description Language: 
+                 File: /var/lib/apt/lists/ru.archive.ubuntu.com_ubuntu_dists_jammy-updates_main_binary-amd64_Packages
+                  MD5: c1f968556452a190fe359bffd151c012
+ Description Language: 
+                 File: /var/lib/apt/lists/ru.archive.ubuntu.com_ubuntu_dists_jammy-updates_main_binary-i386_Packages
+                  MD5: c1f968556452a190fe359bffd151c012
+ Description Language: 
+                 File: /var/lib/dpkg/status
+                  MD5: c1f968556452a190fe359bffd151c012
+
+   Reverse Depends: 
+  repo,git 1:2.28.0
+  libdpkg-perl,git
+  docker.io,git
+  libdpkg-perl,git
+  hugo,git
+  hub,git
+  golang-1.22-go,git
+  golang-1.21-go,git
+  golang-1.20-go,git
+  golang-1.17-go,git
+  ....
+  ```
+
+2. ```sh
+   sudo apt-get install -s git
+   ```
+
+   Output: 
+   ```sh
+   Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libwpe-1.0-1 libwpebackend-fdo-1.0-1 linux-headers-6.2.0-36-generic
+  linux-hwe-6.2-headers-6.2.0-36 linux-image-6.2.0-36-generic
+  linux-modules-6.2.0-36-generic linux-modules-extra-6.2.0-36-generic
+Use 'sudo apt autoremove' to remove them.
+Suggested packages:
+  git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb
+  git-cvs git-mediawiki git-svn
+The following packages will be upgraded:
+  git
+1 to upgrade, 0 to newly install, 0 to remove and 200 not to upgrade.
+Inst git [1:2.34.1-1ubuntu1.10] (1:2.34.1-1ubuntu1.11 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+Conf git (1:2.34.1-1ubuntu1.11 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+   ```
+
+- ## The following packages were automatically installed and are no longer required:
+  libwpe-1.0-1 libwpebackend-fdo-1.0-1 linux-headers-6.2.0-36-generic
+  linux-hwe-6.2-headers-6.2.0-36 linux-image-6.2.0-36-generic
+  linux-modules-6.2.0-36-generic linux-modules-extra-6.2.0-36-generic
+
+- ## The following packages will be upgraded:
+  git
+
+- ## Suggested packages:
+  git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb
+  git-cvs git-mediawiki git-svn
