@@ -3,16 +3,23 @@
 ## Setup and installation process
 
 1. Created a local repository:
+   
    'mkdir -p ~/local-apt-repo'
+   
    'cp /home/vboxuser/Downloads/google-chrome-stable_current_amd64.deb ~/local-apt-repo/'
 
 2. Generated the package index:
+   
    'dpkg-scanpackages ~/local-apt-repo /dev/null | gzip -9c > ~/local-apt-repo/Packages.gz'
 
 3. Added the local repository to my sources List:
+   
    'echo "deb [trusted=yes] file:/home/vboxuser/local-apt-repo ./" | sudo tee /etc/apt/sources.list.d/local-apt-repo.list'
+   
    'sudo apt update'
+   
    Output:
+   
    deb [trusted=yes] file:/home/vboxuser/local-apt-repo ./
    Get:1 file:/home/vboxuser/local-apt-repo ./ InRelease
    Ign:1 file:/home/vboxuser/local-apt-repo ./ InRelease
@@ -26,8 +33,11 @@
    Reading package lists... Done
 
 4. Verified the contents of the packages.gz file:
+   
    'zcat Packages.gz'
+   
    Output:
+   
    Package: google-chrome-stable
    Version: 118.0.5993.117-1
    Architecture: amd64
@@ -46,8 +56,10 @@
    Description: The web browser from Google
    Google Chrome is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
 
-6. Checked the repository of my package:
+5. Checked the repository of my package:
+   
    'apt policy google-chrome-stable'
+   
    Output:
    google-chrome-stable:
   Installed: 118.0.5993.117-1
@@ -58,6 +70,7 @@
  *** 118.0.5993.117-1 100
         100 /var/lib/dpkg/status
 
-7. Installed a package from the local repository:
+6. Installed a package from the local repository:
+    
    'sudo apt install google-chrome-stable'
    
