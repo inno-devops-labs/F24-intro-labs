@@ -1,7 +1,5 @@
-## Task 1
-# Commit: first commit 
-
-Output:
+# Task 1
+## Commit output:
 
 tree 2eab8244f336e33c448c8e587119722ff513bd13
 parent bce0411606986742e3ce4ee2d4737859ff4d36a3
@@ -29,7 +27,7 @@ gpgsig -----BEGIN SSH SIGNATURE-----
 
 first commit
 
-# Tree output:
+## Tree output:
 100644 blob ede183da8ef201e5f5737eea502edc77fd8a9bdc	README.md
 100644 blob 5738bc15a0416ad2624df13badfb235052777e79	index.html
 100644 blob 7a94f7af59b8968be392288ea03179a24ffc9d9e	lab1.md
@@ -37,5 +35,5 @@ first commit
 100644 blob 82ece4fb23f4fc084ea53f3861ffa39eda49c4fb	somefile.txt
 100644 blob 6e6c6d02693f8865e22283a2b1d0f82ee92fa78c	submission1.md
 
-# Blob output:
+## Blob output:
 Some file
