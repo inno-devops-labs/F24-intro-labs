@@ -1,0 +1,37 @@
+# Task 1
+Commit: first commit 
+Output:
+tree 2eab8244f336e33c448c8e587119722ff513bd13
+parent bce0411606986742e3ce4ee2d4737859ff4d36a3
+author Alsu Khairullina <a.khairullina@innopolis.university> 1725970892 +0300
+committer Alsu Khairullina <a.khairullina@innopolis.university> 1725970892 +0300
+gpgsig -----BEGIN SSH SIGNATURE-----
+ U1NIU0lHAAAAAQAAAZcAAAAHc3NoLXJzYQAAAAMBAAEAAAGBALlF/47MejPh+cwVPXAMQQ
+ 85OHt/wFU/7erK/14br3D9fwH2wBFQmjotAGTwOlEhxPvVM4QVG3XJY3s4mLxyu5qwxRpi
+ wS3PNVtO7Wx7mreXD6N8dM2bfEDE+cMrXVXHlH9hBomTSVoXhDzDMvlesvNj9k632PyBFp
+ g+hrZ4naCq+0uCsA+0VOyPFG2pY5k1ENyu2lHEpJry9aw2MP6CehWBFNTxbWSVLR3ORXlD
+ hxiCPUdt93yoSJ8wOfn1eHBeuffYP65Vo7Z6v0Ogn3fcNhB5hwq4j9yQPNpZPjasvLg7q+
+ HIY8gEdCKKff4W2Zz85w9/JiAvixpBTSDM0LYJsxGbulViudpfF107qE2GR+rSxAI4QCDb
+ nDWpxC9HPDOsX0PPCMdk/+ACK1GnT1SCZlbMTngfxo7tzGkZkd9XIXogNQR0PU9XIO2z1E
+ kTSUEewBHHaOWoo6YPBUt+ugDi1GLxqO2qRu6kdQXIodMii/13vgQ0MnDbGjA078r9fHUP
+ EQAAAANnaXQAAAAAAAAABnNoYTUxMgAAAZQAAAAMcnNhLXNoYTItNTEyAAABgHeK55O7NG
+ IWlx+n2Ow1i8wmwQUpGrC3TDY0DTf2A/kXRrqYU6XB5iG3UIiuhP45VpbUnlQXA+7sYnUl
+ ZoqWHCHLMQLcYJny1j9QpQqTZS0hYZrh9tzJO786SjTCd8mceJvuo/YDWii7avwQsohlRn
+ cJUfb6SFgsXXF+G7sT67ZuI7h+mYH4X/C3XQeljaveDIFFink0qeBJ9z2te/vKJmdmmwXE
+ X/Xy1m4DZyuIrmgfwH/ofs33G9bKkA/otFhE/BOFBF43BknA+PzBzm6K3RFU2V37ZXLP8i
+ hpdYycHiZhhNmJMMFQmoRcpOlz/g1k4VJeeottBLqWwbT4017paTxy5tiCJZ4PZYDA2Ct0
+ 2kxqbVlQkz5yB1uu9LVxhjtQ6//m/U1PWy/PA+i1+fIZwyeiltecuntxwAlpaejsPBz6V+
+ VJ7Jv1IQNscSOdrKKgA4uuda8eMgRb2qr2evDY0RUqN+JbwS8elre1tRxPvndYHObT75JO
+ JWz0TNbehz/eFA==
+ -----END SSH SIGNATURE-----
+
+first commit
+Tree output:
+100644 blob ede183da8ef201e5f5737eea502edc77fd8a9bdc	README.md
+100644 blob 5738bc15a0416ad2624df13badfb235052777e79	index.html
+100644 blob 7a94f7af59b8968be392288ea03179a24ffc9d9e	lab1.md
+100644 blob 1b99cc0044f93f556a0f6a599c7edf2f33f4944a	lab2.md
+100644 blob 82ece4fb23f4fc084ea53f3861ffa39eda49c4fb	somefile.txt
+100644 blob 6e6c6d02693f8865e22283a2b1d0f82ee92fa78c	submission1.md
+Blob output:
+Some file
