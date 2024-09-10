@@ -4,20 +4,24 @@
 
 1. Created a local repository:
    
-   'mkdir -p ~/local-apt-repo'
-   
-   'cp /home/vboxuser/Downloads/google-chrome-stable_current_amd64.deb ~/local-apt-repo/'
+   ```sh
+   mkdir -p ~/local-apt-repo
+   cp /home/vboxuser/Downloads/google-chrome-stable_current_amd64.deb ~/local-apt-repo/
+   ```
 
 2. Generated the package index:
    
-   'dpkg-scanpackages ~/local-apt-repo /dev/null | gzip -9c > ~/local-apt-repo/Packages.gz'
+   ```sh
+   dpkg-scanpackages ~/local-apt-repo /dev/null | gzip -9c > ~/local-apt-repo/Packages.gz
+   ```
 
 3. Added the local repository to my sources List:
    
-   'echo "deb [trusted=yes] file:/home/vboxuser/local-apt-repo ./" | sudo tee /etc/apt/sources.list.d/local-apt-repo.list'
-   
-   'sudo apt update'
-   
+   ```sh
+   echo "deb [trusted=yes] file:/home/vboxuser/local-apt-repo ./" | sudo tee /etc/apt/sources.list.d/local-apt-repo.list
+   sudo apt update
+   ```
+      
    Output:
    
    deb [trusted=yes] file:/home/vboxuser/local-apt-repo ./
@@ -34,7 +38,9 @@
 
 4. Verified the contents of the packages.gz file:
    
-   'zcat Packages.gz'
+   ```sh
+   zcat Packages.gz
+   ```
    
    Output:
    
@@ -58,7 +64,9 @@
 
 5. Checked the repository of my package:
    
-   'apt policy google-chrome-stable'
+   ```sh
+   apt policy google-chrome-stable
+   ```
    
    Output:
    google-chrome-stable:
@@ -72,5 +80,7 @@
 
 6. Installed a package from the local repository:
     
-   'sudo apt install google-chrome-stable'
+   ```sh
+   sudo apt install google-chrome-stable
+   ```
    
