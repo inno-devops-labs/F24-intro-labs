@@ -97,8 +97,8 @@ Second commit content
 ## Task 2
 Steps:
 1. New branch creation: `git checkout -b git-reset-practice`
-2. Series of commits: 3 commits as the baseline required
-3. Git reset and reflog usage: 
+2. Series of commits: 3 commits as the baseline requires
+3. Git reset and reflog usage step by step: 
 
 `git reset --soft HEAD~1`: ~1 - move the HEAD to the previous commit (Second commit), --soft - keep changes on local machine and in the index ("Third commit" string isn't removed from the file, exists in the index). Doesn't give any output, but the result can be checked in the `git log`:
 ```
@@ -115,17 +115,25 @@ Date:   Sun Sep 8 22:00:38 2024 +0300
     First commit
 ```
 
-`git reset --soft HEAD~2`: ~2 - move the HEAD 2 commits back (First commit). No output
+`git reset --soft HEAD~2`: ~2 - move the HEAD 2 commits back (from the current HEAD). No output, but `git log` demonstrates that the HEAD points to the commit from the previous task (3 steps before the last "Third commit" commit):
+```
+commit 262151e77ff654c8fb383c0cb36d128aac8f6e96 (HEAD -> git-reset-practice)
+Author: Anastasia Pichugina <a.pichugina@innopolis.university>
+Date:   Sun Sep 8 20:22:23 2024 +0300
 
-`git reset --hard HEAD~1`: move the HEAD to the previous commit and "--hard" turns the file to his state in the prevouis commit (file.txt in both PC and staging area doesn't contain "Third commit" string). The output examples:
+    Commit with the 1st and 2nd files
+```
 
+`git reset --hard <hash>`: move the HEAD to the commit, which hash is "< hash >", used for switching between commits by their hash, the history can be checked through `git reflog`. The output:
+```
+HEAD is now at 3d8adb9 Third commit
+```
+`git reset --hard HEAD~1`: move the HEAD to the previous commit and "--hard" turns the file to his state in the prevouis commit (file.txt in both PC and staging area doesn't contain "Third commit" string). The output example:
+```
 HEAD is now at 21f9181 Second commit
-
-`git reflog`: look at the log of actions taken, the history of swapping between commits and branches. Switching to the previous commit and back (3d8adb9):
+```
+`git reflog`: look at the order of actions taken, the history of swapping between commits and branches. The history of the switching to the previous commit and back (3d8adb9) example:
 ```
 3d8adb9 HEAD@{1}: reset: moving to 3d8adb9
 21f9181 (HEAD -> git-reset-practice) HEAD@{2}: reset: moving to HEAD~1
 ```
-`git reset --hard <hash>`: move the HEAD to the commit, which hash is "< hash >", used for switching between commits by their hash, the history can be checked through `git reflog`. 
-
-HEAD is now at 3d8adb9 Third commit
