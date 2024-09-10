@@ -25,6 +25,7 @@
    Output:
    
    deb [trusted=yes] file:/home/vboxuser/local-apt-repo ./
+   
    Get:1 file:/home/vboxuser/local-apt-repo ./ InRelease
    Ign:1 file:/home/vboxuser/local-apt-repo ./ InRelease
    Get:2 file:/home/vboxuser/local-apt-repo ./ Release
@@ -36,7 +37,7 @@
    ....
    Reading package lists... Done
 
-4. Verified the contents of the packages.gz file:
+5. Verified the contents of the packages.gz file:
    
    ```sh
    zcat Packages.gz
@@ -62,7 +63,7 @@
    Description: The web browser from Google
    Google Chrome is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
 
-5. Checked the repository of my package:
+6. Checked the repository of my package:
    
    ```sh
    apt policy google-chrome-stable
@@ -78,7 +79,7 @@
  *** 118.0.5993.117-1 100
         100 /var/lib/dpkg/status
 
-6. Installed a package from the local repository:
+7. Installed a package from the local repository:
     
    ```sh
    sudo apt install google-chrome-stable
