@@ -85,5 +85,7 @@ Some file
      ```
      output:
      HEAD is now at 14b4f12 Third commit
-
-
+     
+'git reset --soft': This command moves the HEAD pointer to an earlier commit but keeps changes in the staging area. This allows you to re-commit those changes if needed.
+'git reset --hard': This command moves the HEAD pointer to an earlier commit and discards all changes made since that commit. All uncommitted changes will be lost.
+'git reflog': This command shows a log of all HEAD movements, allowing you to recover commits that were lost after a reset or other operations that modify commit history.
