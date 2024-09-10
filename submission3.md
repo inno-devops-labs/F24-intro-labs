@@ -37,3 +37,53 @@ first commit
 
 ## Blob output:
 Some file
+
+# Task 2
+
+1. Created a new branch named "git-reset-practice"
+     ```sh
+     git checkout -b git-reset-practice
+     ```
+     
+2. Created a series of commits
+    ```sh
+    echo "First commit" > file.txt
+    git add file.txt
+    git commit -m "First commit"
+     
+    echo "Second commit" >> file.txt
+    git add file.txt
+    git commit -m "Second commit"
+     
+    echo "Third commit" >> file.txt
+    git add file.txt
+    git commit -m "Third commit"
+    ```
+    
+3. Used `git reset --hard` and `git reset --soft` to navigate the commit history.
+
+     ```sh
+     git reset --soft HEAD~1
+     git reset --hard HEAD~1
+     ```
+     Output:
+     HEAD is now at c9291d5 First commit
+
+4. Used `git reflog` to recover commits after a reset.
+
+     ```sh
+     git reflog
+     ```
+     Output:
+5.   Used 'git reset --hard <reflog_hash>' to recover some commit after reset
+     ```sh
+     git reset --hard <reflog_hash>
+     ```
+     example:
+     ```sh
+     git reset --hard 14b4f12
+     ```
+     output:
+     HEAD is now at 14b4f12 Third commit
+
+
