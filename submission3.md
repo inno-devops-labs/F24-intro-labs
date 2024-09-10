@@ -100,7 +100,20 @@ Steps:
 2. Series of commits: 3 commits as the baseline required
 3. Git reset and reflog usage: 
 
-`git reset --soft HEAD~1`: ~1 - move the HEAD to the previous commit (Second commit), --soft - keep changes on local machine and in the index ("Third commit" string isn't removed from the file, exists in the index). Doesn't give any output, but the result can be checked in the `git log`
+`git reset --soft HEAD~1`: ~1 - move the HEAD to the previous commit (Second commit), --soft - keep changes on local machine and in the index ("Third commit" string isn't removed from the file, exists in the index). Doesn't give any output, but the result can be checked in the `git log`:
+```
+commit 21f91813ec606e9ca8e08ce07da6556907e5c8eb
+Author: Anastasia Pichugina <a.pichugina@innopolis.university>
+Date:   Sun Sep 8 22:01:08 2024 +0300
+
+    Second commit
+
+commit e692e36b33cff2bf5443d221227e4a167ca6f034
+Author: Anastasia Pichugina <a.pichugina@innopolis.university>
+Date:   Sun Sep 8 22:00:38 2024 +0300
+
+    First commit
+```
 
 `git reset --soft HEAD~2`: ~2 - move the HEAD 2 commits back (First commit). No output
 
@@ -108,11 +121,11 @@ Steps:
 
 HEAD is now at 21f9181 Second commit
 
-`git reflog`: look at the log of actions taken, the history of swapping between commits. Switching to the previous commit and back (3d8adb9):
-
+`git reflog`: look at the log of actions taken, the history of swapping between commits and branches. Switching to the previous commit and back (3d8adb9):
+```
 3d8adb9 HEAD@{1}: reset: moving to 3d8adb9
 21f9181 (HEAD -> git-reset-practice) HEAD@{2}: reset: moving to HEAD~1
-
+```
 `git reset --hard <hash>`: move the HEAD to the commit, which hash is "< hash >", used for switching between commits by their hash, the history can be checked through `git reflog`. 
 
 HEAD is now at 3d8adb9 Third commit
