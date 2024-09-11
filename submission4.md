@@ -93,10 +93,10 @@
    ```
 
    1 of outputs example:
-   ```sh
+   ```
    Package: git
-Versions: 
-1:2.34.1-1ubuntu1.11 (/var/lib/apt/lists/ru.archive.ubuntu.com_ubuntu_dists_jammy-updates_main_binary-amd64_Packages) (/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_jammy-security_main_binary-amd64_Packages)
+   Versions:
+   1:2.34.1-1ubuntu1.11 (/var/lib/apt/lists/ru.archive.ubuntu.com_ubuntu_dists_jammy-updates_main_binary-amd64_Packages) (/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_jammy-security_main_binary-amd64_Packages)
  Description Language: 
                  File: /var/lib/apt/lists/ru.archive.ubuntu.com_ubuntu_dists_jammy_main_binary-amd64_Packages
                   MD5: c1f968556452a190fe359bffd151c012
@@ -138,7 +138,7 @@ Versions:
    ```
 
    Output: 
-   ```sh
+   ```
    Reading package lists... Done
 Building dependency tree... Done
 Reading state information... Done
@@ -155,9 +155,10 @@ The following packages will be upgraded:
 1 to upgrade, 0 to newly install, 0 to remove and 200 not to upgrade.
 Inst git [1:2.34.1-1ubuntu1.10] (1:2.34.1-1ubuntu1.11 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
 Conf git (1:2.34.1-1ubuntu1.11 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
-   ```
+```
 
 - ## The following packages were automatically installed and are no longer required:
+- 
   libwpe-1.0-1 libwpebackend-fdo-1.0-1 linux-headers-6.2.0-36-generic
   linux-hwe-6.2-headers-6.2.0-36 linux-image-6.2.0-36-generic
   linux-modules-6.2.0-36-generic linux-modules-extra-6.2.0-36-generic
