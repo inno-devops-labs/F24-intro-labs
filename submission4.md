@@ -74,13 +74,13 @@
    Output:
    ```
    google-chrome-stable:
-  Installed: 118.0.5993.117-1
-  Candidate: 128.0.6613.119-1
-  Version table:
-     128.0.6613.119-1 500
-        500 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages
- *** 118.0.5993.117-1 100
-        100 /var/lib/dpkg/status
+   Installed: 118.0.5993.117-1
+   Candidate: 128.0.6613.119-1
+   Version table:
+   128.0.6613.119-1 500
+   500 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages
+   118.0.5993.117-1 100
+   100 /var/lib/dpkg/status
    ```
 
 8. Installed a package from the local repository:
@@ -88,6 +88,7 @@
    ```sh
    sudo apt install google-chrome-stable
    ```
+
 
 # Task 2
 - I selected the package `git` for the simulation
