@@ -23,7 +23,7 @@
    ```
       
    Output:
-   
+   ```
    deb [trusted=yes] file:/home/vboxuser/local-apt-repo ./
    
    Get:1 file:/home/vboxuser/local-apt-repo ./ InRelease
@@ -36,6 +36,7 @@
    Ign:4 file:/home/vboxuser/local-apt-repo ./ Translation-en
    ....
    Reading package lists... Done
+   ```
 
 5. Verified the contents of the packages.gz file:
    
