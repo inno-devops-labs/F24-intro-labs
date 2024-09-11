@@ -162,7 +162,7 @@
    Conf git (1:2.34.1-1ubuntu1.11 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
    ```
 
-- ## The following packages were automatically installed and are no longer required:
+- ## The following packages are required and need to be installed:
   
   libwpe-1.0-1 libwpebackend-fdo-1.0-1 linux-headers-6.2.0-36-generic
   
@@ -177,3 +177,92 @@
   git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb
   
   git-cvs git-mediawiki git-svn
+
+
+  # Task 3
+
+1. Installed a package. I selected 'vim':
+
+   ```sh
+   sudo apt install vim
+   ```
+
+   Output:
+   ```
+   Reading package lists... Done
+   Building dependency tree... Done
+   Reading state information... Done
+   The following packages were automatically installed and are no longer required:
+   libwpe-1.0-1 libwpebackend-fdo-1.0-1 linux-headers-6.2.0-36-generic
+   linux-hwe-6.2-headers-6.2.0-36 linux-image-6.2.0-36-generic
+   linux-modules-6.2.0-36-generic linux-modules-extra-6.2.0-36-generic
+   Use 'sudo apt autoremove' to remove them.
+   The following additional packages will be installed:
+   vim-runtime
+   Suggested packages:
+   ctags vim-doc vim-scripts
+   The following NEW packages will be installed
+   vim vim-runtime
+   0 to upgrade, 2 to newly install, 0 to remove and 136 not to upgrade.
+   Need to get 8 556 kB of archives.
+   After this operation, 37,6 MB of additional disk space will be used.
+   Do you want to continue? [Y/n] y
+   Get:1 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 vim-runtime all 2:8.2.3995-1ubuntu2.18 [6 827 kB]
+   Get:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 vim amd64 2:8.2.3995-1ubuntu2.18 [1 730 kB]
+   Fetched 8 556 kB in 3s (2 619 kB/s)
+   Selecting previously unselected package vim-runtime.
+   (Reading database ... 273308 files and directories currently installed.)
+   Preparing to unpack .../vim-runtime_2%3a8.2.3995-1ubuntu2.18_all.deb ...
+   Adding 'diversion of /usr/share/vim/vim82/doc/help.txt to /usr/share/vim/vim82/d
+   oc/help.txt.vim-tiny by vim-runtime'
+   Adding 'diversion of /usr/share/vim/vim82/doc/tags to /usr/share/vim/vim82/doc/t
+   ags.vim-tiny by vim-runtime'
+   Unpacking vim-runtime (2:8.2.3995-1ubuntu2.18) ...
+   Selecting previously unselected package vim.
+   Preparing to unpack .../vim_2%3a8.2.3995-1ubuntu2.18_amd64.deb ...
+   Unpacking vim (2:8.2.3995-1ubuntu2.18) ...
+   Setting up vim-runtime (2:8.2.3995-1ubuntu2.18) ...
+   Setting up vim (2:8.2.3995-1ubuntu2.18) ...
+   update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vim (vim) in a
+   uto mode
+   update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vimdiff (vimdiff) in auto mode
+   update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rvim (rvim) in auto mode
+   update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rview (rview) in auto mode
+   update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vi (vi) in auto mode
+   update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/view (view) in auto mode
+   update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/ex (ex) in auto mode
+   Processing triggers for man-db (2.10.2-1) ...
+   ```
+
+2. Held a package:
+
+   ```sh
+   sudo apt-mark hold vim
+   ```
+
+   Output:
+   ```
+   vim set on hold.
+   ```
+
+3. Verified a hold status:
+
+   ```sh
+   apt-mark showhold
+   ```
+
+   Output:
+   ```
+   vim
+   ```
+
+4. Unheld the package:
+
+   ```sh
+   sudo apt-mark unhold vim
+   ```
+
+   Output:
+   ```
+   Cancelled hold on vim.
+   ```
