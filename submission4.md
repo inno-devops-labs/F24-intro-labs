@@ -171,3 +171,38 @@ Conf htop (3.3.0-4build1 Ubuntu:24.04/noble [amd64])
 ##### Dependencies: 
 * libnl-3-200 (3.7.0-0.3build1 Ubuntu:24.04/noble [amd64])
 * libnl-genl-3-200 (3.7.0-0.3build1 Ubuntu:24.04/noble [amd64])
+
+
+### Task 3: Hold and Unhold Package Versions
+
+1) Intsalling the package: __vim__ & __htop__ in my case. 
+```sh
+>   apt install vim htop
+```
+
+2) Hold vim & htop. 
+```sh
+> apt-mark hold vim htop
+vim set on hold.
+htop set on hold.
+```
+
+3) Show holded packages. 
+```sh
+> apt-mark showhold 
+htop
+vim
+```
+4) Unhold package. 
+```sh
+> apt-mark unhold vim
+Canceled hold on vim.
+
+> apt-mark showhold
+htop
+
+> apt-mark unhold htop
+Canceled hold on htop.
+
+> apt-mark showhold
+``` 
