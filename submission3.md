@@ -53,3 +53,54 @@ task: 3rd task commit creation
 > git cat-file -p 7b57bd29ea8afbdeb9bac64cf7074f4b531492a8
 some text
 ```
+
+### Task 2: Practice with Git Reset Command
+
+1) Done required steps 
+```sh
+> git checkout -b git-reset-practice
+
+> echo "First commit" > file.txt
+> git add file.txt
+> git commit -m "First commit"
+
+> echo "Second commit" >> file.txt
+> git add file.txt
+> git commit -m "Second commit"
+
+> echo "Third commit" >> file.txt
+> git add file.txt
+> git commit -m "Third commit"
+```
+
+2) Tried soft reset: 
+```sh
+> git reset --soft HEAD~1
+```
+
+Shifted the HEAD pointer one commit back and saved all changes. 
+
+```sh
+> git reflog
+> git  reset --hard 91d787f   
+```
+
+Shifted the HEAD pointer back to last commit. 
+
+3) Tried hard reset: 
+```sh
+> git reset --hard HEAD~1
+```
+
+Shifted the HEAD pointer one commit back and discarded the changes of the last commit. 
+
+```sh
+> git reflog
+> git  reset --hard 91d787f   
+```
+
+Shifted the HEAD pointer back to last commit.
+
+#### Summary: 
+1) ___git reset --soft___ would be useful if it is required to undo some commits, but keep the changes. 
+2) ___git reset --hard___ would be useful to remove commits and back project to some previous state.  
