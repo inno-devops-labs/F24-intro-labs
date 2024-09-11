@@ -44,7 +44,7 @@
    ```
    
    Output:
-   
+   ```
    Package: google-chrome-stable
    Version: 118.0.5993.117-1
    Architecture: amd64
@@ -62,7 +62,8 @@
    Priority: optional
    Description: The web browser from Google
    Google Chrome is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
-
+   ```
+   
 6. Checked the repository of my package:
    
    ```sh
@@ -70,6 +71,7 @@
    ```
    
    Output:
+   ```
    google-chrome-stable:
   Installed: 118.0.5993.117-1
   Candidate: 128.0.6613.119-1
@@ -78,8 +80,9 @@
         500 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages
  *** 118.0.5993.117-1 100
         100 /var/lib/dpkg/status
+   ```
 
-7. Installed a package from the local repository:
+8. Installed a package from the local repository:
     
    ```sh
    sudo apt install google-chrome-stable
@@ -140,22 +143,22 @@
    Output: 
    ```
    Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-The following packages were automatically installed and are no longer required:
-  libwpe-1.0-1 libwpebackend-fdo-1.0-1 linux-headers-6.2.0-36-generic
-  linux-hwe-6.2-headers-6.2.0-36 linux-image-6.2.0-36-generic
-  linux-modules-6.2.0-36-generic linux-modules-extra-6.2.0-36-generic
-Use 'sudo apt autoremove' to remove them.
-Suggested packages:
-  git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb
-  git-cvs git-mediawiki git-svn
-The following packages will be upgraded:
-  git
-1 to upgrade, 0 to newly install, 0 to remove and 200 not to upgrade.
-Inst git [1:2.34.1-1ubuntu1.10] (1:2.34.1-1ubuntu1.11 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
-Conf git (1:2.34.1-1ubuntu1.11 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
-```
+   Building dependency tree... Done
+   Reading state information... Done
+   The following packages were automatically installed and are no longer required:
+   libwpe-1.0-1 libwpebackend-fdo-1.0-1 linux-headers-6.2.0-36-generic
+   linux-hwe-6.2-headers-6.2.0-36 linux-image-6.2.0-36-generic
+   linux-modules-6.2.0-36-generic linux-modules-extra-6.2.0-36-generic
+   Use 'sudo apt autoremove' to remove them.
+   Suggested packages:
+   git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb
+   git-cvs git-mediawiki git-svn
+   The following packages will be upgraded:
+   git
+   1 to upgrade, 0 to newly install, 0 to remove and 200 not to upgrade.
+   Inst git [1:2.34.1-1ubuntu1.10] (1:2.34.1-1ubuntu1.11 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+   Conf git (1:2.34.1-1ubuntu1.11 Ubuntu:22.04/jammy-updates, Ubuntu:22.04/jammy-security [amd64])
+   ```
 
 - ## The following packages were automatically installed and are no longer required:
 - 
