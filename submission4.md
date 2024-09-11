@@ -114,4 +114,60 @@ valgrind:
 > valgrind
 valgrind: no program specified
 valgrind: Use --help for more information.
-````
+```
+### Task 2: Simulate Package Installation and Identify Dependencies
+Package to test: __htop__
+
+```sh
+> apt-cache showpkg htop                
+Package: htop
+Versions: 
+3.3.0-4build1 (/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages.lz4)
+ Description Language: 
+                 File: /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_noble_main_binary-amd64_Packages.lz4
+                  MD5: 8eb5aa19b3c92a975dc78e2165f6688d
+
+
+Reverse Depends: 
+  ubuntu-server,htop
+  far2l,htop
+  ubuntu-server,htop
+  ubuntu-mate-desktop,htop
+  ubuntu-mate-core,htop
+  ubuntu-budgie-desktop-minimal,htop
+  ubuntu-budgie-desktop,htop
+  lubuntu-desktop,htop
+  hollywood,htop
+  freedombox,htop
+  far2l,htop
+Dependencies: 
+3.3.0-4build1 - libc6 (2 2.38) libncursesw6 (2 6) libnl-3-200 (2 3.2.7) libnl-genl-3-200 (2 3.2.7) libtinfo6 (2 6) lm-sensors (0 (null)) lsof (0 (null)) strace (0 (null)) 
+Provides: 
+3.3.0-4build1 - 
+Reverse Provides:       
+```
+
+```sh
+> apt-get install -s htop
+
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libnl-3-200 libnl-genl-3-200
+Suggested packages:
+  lm-sensors lsof strace
+The following NEW packages will be installed:
+  htop libnl-3-200 libnl-genl-3-200
+0 upgraded, 3 newly installed, 0 to remove and 14 not upgraded.
+Inst libnl-3-200 (3.7.0-0.3build1 Ubuntu:24.04/noble [amd64])
+Inst libnl-genl-3-200 (3.7.0-0.3build1 Ubuntu:24.04/noble [amd64])
+Inst htop (3.3.0-4build1 Ubuntu:24.04/noble [amd64])
+Conf libnl-3-200 (3.7.0-0.3build1 Ubuntu:24.04/noble [amd64])
+Conf libnl-genl-3-200 (3.7.0-0.3build1 Ubuntu:24.04/noble [amd64])
+Conf htop (3.3.0-4build1 Ubuntu:24.04/noble [amd64])
+```
+
+##### Dependencies: 
+* libnl-3-200 (3.7.0-0.3build1 Ubuntu:24.04/noble [amd64])
+* libnl-genl-3-200 (3.7.0-0.3build1 Ubuntu:24.04/noble [amd64])
