@@ -177,7 +177,7 @@ Conf htop (3.3.0-4build1 Ubuntu:24.04/noble [amd64])
 
 1) Intsalling the package: __vim__ & __htop__ in my case. 
 ```sh
->   apt install vim htop
+> apt install vim htop
 ```
 
 2) Hold vim & htop. 
