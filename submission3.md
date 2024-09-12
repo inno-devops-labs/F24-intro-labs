@@ -2,7 +2,6 @@
 
 ## Task 1: Git Internal Objects
 
-In this task, we explored how Git stores data in the form of blobs, trees, and commits. Below are the results of using `git cat-file` to inspect these internal objects.
 
 ### 1. Commit Object
 
