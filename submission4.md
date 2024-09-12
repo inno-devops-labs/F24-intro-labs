@@ -92,3 +92,51 @@ The following NEW packages will be installed:
 The suggested package is `malcontent-gui`, and the new package installed is `libostree-1-1`
 
 
+# Holding and upholding package versions
+
+Let's use screen package for this task.
+
+```markdown
+> sudo apt install screen
+```
+```markdown
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libostree-1-1
+Suggested packages:
+  malcontent-gui
+The following NEW packages will be installed:
+  flatpak libostree-1-1
+...
+```
+Now, let's hold the package:
+```markdown
+> sudo apt-mark hold screen
+```
+```markdown
+screen set on hold.
+```
+
+Verify hold status
+```markdown
+> apt-mark showhold
+```
+```markdown
+screen
+```
+Unhold package
+```markdown
+> sudo apt-mark unhold screen
+```
+```markdown
+Canceled hold on screen.
+```
+
+```markdown
+apt-mark showhold
+```
+```markdown
+```
+
