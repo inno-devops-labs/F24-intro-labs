@@ -28,7 +28,7 @@ Upload lab1 Git Intro & lab2 IPFS, fleek
     Signed-off-by: Dmitriy Creed <creed@soramitsu.co.jp>
 ```
 
-3. Check the commit object of the first commit to see its content.
+3. Check the commit object of the first commit to see its content. (I changed some characters in ssh signature for security).
 
 ```
 git cat-file commit f4670e8f37945f7d4c149f5a58fbabcf9306fc84
@@ -42,10 +42,10 @@ parent 6ade7fdfa1fe2192c8f3e247ed8b24d5d7ff6b30
 author Arina Goncharova <a.goncharova@innopolis.university> 1726084369 +0300
 committer Arina Goncharova <a.goncharova@innopolis.university> 1726084369 +0300
 gpgsig -----BEGIN SSH SIGNATURE-----
- U1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1rT3SLSPLJy9cINsoGs+ValQbA
- nIm7dMQvVnC0IbaeQAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5
+ U1NIU**HAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAg1rT3SLSPLJy9cINsoGs+ValQbA
+ nIm7dMQvV**0IbaeQAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5
  AAAAQLInQYIDd0kFdSfDvcbNmhQh1gNslefrT3YddvQDhCejxHkA4v0B3Vd82s4lnEaIEL
- CKZRiNyqfLjyqAegpgFg8=
+ CKZRiNyqfLjyqAegpgF**=
  -----END SSH SIGNATURE-----
 
 test commit 1
