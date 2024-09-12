@@ -1,8 +1,8 @@
 ## Task 1: Configure and Use a Local Package Repository
 
 **1. Downloading the .deb Package:**
-    
-* First I downloaded gimp using  ` apt-get download gimp` 
+
+* First I downloaded gimp using  ` apt-get download gimp`
 
 **2. Creating the Local Repository:**
 
@@ -13,10 +13,9 @@
 
 * The `dpkg-scanpackages` command was used to generate a `Packages` file containing metadata about the GIMP package:
 
-   ```bash
-   dpkg-scanpackages ~/local-apt-repo /dev/null | gzip -9c > ~/local-apt-repo/Packages.gz
-   ```
-
+  ```bash
+  dpkg-scanpackages ~/local-apt-repo /dev/null | gzip -9c > ~/local-apt-repo/Packages.gz
+  ```
 * I encountered a warning message, that said that an override file was missing. As the GIMP package is standard, I decided to ignore this warning.
 
 **4. Verifying the `Packages.gz` File:**
@@ -24,20 +23,22 @@
 * I checked that the `Packages.gz` file `Filename` entry contained a relative path. It had the absolute path, so I unpacked the archive, modifed the Filename and archived it back.
 * The `Filename` was verified to be:
 
-    ```
-    Filename: ./gimp_2.10.30-1ubuntu0.1_amd64.deb
-    ```
+  ```
+  Filename: ./gimp_2.10.30-1ubuntu0.1_amd64.deb
+  ```
 
 **5. Installing GIMP from the Local Repository:**
 
 * The GIMP package was successfully installed from the local repository using the `apt` command:
 
-   ```bash
-   sudo apt install gimp
-   ```
+  ```bash
+  sudo apt install gimp
+  ```
 
 ## Task 2: Simulate Package Installation and Identify Dependencies
-root@LAPTOP-6E9KNCDJ:/home/y_pod/F24-intro-labs# sudo apt-get install -s gimp 
+
+```bash
+sudo apt-get install -s gimp
 Reading package lists... Done
 Building dependency tree... Done
 Reading state information... Done
@@ -104,10 +105,12 @@ The following NEW packages will be installed:
   libxml-parser-perl libxml-twig-perl libxml-xpathengine-perl libxmu6 libxrandr2 libxrender1 libxshmfence1 libxt6 libxtst6 libxv1 libxvidcore4
   libxxf86dga1 libxxf86vm1 libzmq5 libzvbi-common libzvbi0 mesa-va-drivers mesa-vdpau-drivers ocl-icd-libopencl1 perl-openssl-defaults
   poppler-data session-migration tilix tilix-common ubuntu-mono va-driver-all vdpau-driver-all x11-common x11-utils x11-xserver-utils xdg-utils
-0 upgraded, 267 newly installed, 0 to remove and 129 not upgraded.
+0 upgraded, 267 newly installed, 0 to remove and 129 not upgraded
+```
 
 ## Task 3: Hold and Unhold Package Versions
 
+```bash
 root@LAPTOP-6E9KNCDJ:/home/y_pod/F24-intro-labs# sudo apt install nano
 Reading package lists... Done
 Building dependency tree... Done
@@ -136,3 +139,4 @@ root@LAPTOP-6E9KNCDJ:/home/y_pod/F24-intro-labs# apt-mark showhold
 nano
 root@LAPTOP-6E9KNCDJ:/home/y_pod/F24-intro-labs# sudo apt-mark unhold nano
 Canceled hold on nano.
+```
