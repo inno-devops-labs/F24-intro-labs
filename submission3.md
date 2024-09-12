@@ -49,8 +49,6 @@ te test git cat-file -p on blob
 test
 ```
 
-
-
 ## Task 2: Practice with Git Reset Command
 
 I created a new branch named `git-reset-practice` and made three commits:
@@ -61,23 +59,23 @@ I created a new branch named `git-reset-practice` and made three commits:
 
    - This command moved the HEAD pointer one commit back (to the second commit) while keeping the changes from the third commit in the staging area.
 2. **`git reset --hard HEAD~1`:
-   `HEAD is now at ccf61e2 First commit`**
+   `HEAD is now at 7b76ecf First commit`**
 
    - This command moved the HEAD pointer one commit back (to the first commit) and discarded all changes made in the second commit, both from the working directory and the staging area.
-   - The output confirmed that HEAD is now at the first commit (with hash ccf61e2).
+   - The output confirmed that HEAD is now at the first commit.
 3. **`git reflog`**:
 
    ```
-   ccf61e2 (HEAD -> git-reset-practice) HEAD@{0}: reset: moving to HEAD1
-   f631638 HEAD@{1}: reset: moving to HEAD1
-   91178eb HEAD@{2}: commit: Third commit
-   f631638 HEAD@{3}: commit: Second commit
-   ccf61e2 (HEAD -> git-reset-practice) HEAD@{4}: commit: First commit
-   33728fe (Lab3) HEAD@{5}: checkout: moving from Lab3 to git-reset-practice
+   7b76ecf (HEAD -> git-reset-practice) HEAD@{0}: reset: moving to HEAD~1
+   83356c2 HEAD@{1}: reset: moving to HEAD~1
+   06bede7 HEAD@{2}: commit: Third commit
+   83356c2 HEAD@{3}: commit: Second commit
+   7b76ecf (HEAD -> git-reset-practice) HEAD@{4}: commit: First commit
+   2fcbd19 (origin/Lab3, Lab3) HEAD@{5}: checkout: moving from Lab3 to git-reset-practice
    ```
    - This command displayed the reflog, which is a record of all changes to the HEAD pointer.
    - It showed the history of resets and commits, allowing me to see the sequence of actions and the corresponding commit hashes.
-4. **`git reset --hard 91178eb`:**
+4. **`git reset --hard 06bed`:**
 
-   - This command reset the HEAD pointer to the third commit (with hash 91178eb).
+   - This command reset the HEAD pointer to the third commit.
    - The output confirmed that HEAD is now at the third commit.
