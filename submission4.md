@@ -115,4 +115,33 @@ Dependencies:
 - wget
 - xdg-utils (>= 1.0.2)
 ```
+## Task 3: Hold and Unhold Package Versions
 
+## Step1: Install a Package:
+```bash
+sudo apt install google-chrome-stable
+```
+## Step2: Hold the Package:
+```bash
+sudo apt-mark hold google-chrome-stable
+```
+### Output:
+```bash
+google-chrome-stable set on hold.
+```
+## Step3: Verification Command:
+```bash
+apt-mark showhold
+```
+### Output:
+```bash
+google-chrome-stable
+```
+## Step4: Unhold the Package:
+```bash
+sudo apt-mark unhold google-chrome-stable
+```
+### Output:
+```bash
+Canceled hold on google-chrome-stable.
+```
