@@ -61,4 +61,4 @@ Afterall, I have checked the reflog to see the history of the commits.
 
 `git reflog` shows the history of the commits and resets.
 
-Finally, I have recovered the third commit by running `git reset --hard <reflog_hash>. 
+Finally, I have recovered the third commit by running `git reset --hard <reflog_hash>`. 
