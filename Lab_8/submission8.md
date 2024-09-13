@@ -22,7 +22,7 @@ CONTAINER ID   IMAGE         COMMAND    CREATED        STATUS                   
 11b1c4827fa5   hello-world   "/hello"   17 hours ago   Exited (0) 17 hours ago             focused_varahamihira
 ```
 
-After pulling, container wasn't running therefore it doesn't appear in `docker ps -a`
+After pulling the image, container wasn't running therefore it doesn't appear in `docker ps -a`
 
 ```
 $ docker run -it --name ubuntu_container ubuntu:latest
@@ -69,7 +69,7 @@ $ docker save -o ubuntu_image.tar ubuntu:latest
 $
 ```
 
-The image has been saved
+The archive from image has been saved
 
 ```
 $ ls -lh ubuntu_image.tar
@@ -105,7 +105,7 @@ CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS       
 
 ![alt text](image.png)
 
-After creating html file I ran following command:
+After creating html file I copied it to container using following command:
 
 ```
 $ docker cp index.html nginx_container:/usr/share/nginx/html/index.html
@@ -131,6 +131,7 @@ And created new container and checked if it's running
 ```
 $ docker run -d -p 80:80 --name my_website_container my_website:latest
 4ec3410dc331c458922820658bcdabe2add60f0bda14fa6844efd485c41dfdc9
+
 $ curl http://127.0.0.1:80
 <html>
 <head>
