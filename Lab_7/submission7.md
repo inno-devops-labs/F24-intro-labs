@@ -21,6 +21,7 @@ I have following VM settings:
 
 # Task 2: System Information Tools
 
+I didn't install any tool for getting processor, RAM, network, and OS information. Because all needed commands exist in Ubuntu terminal.
 
 To display processor info I will use `lscpu` command
 
