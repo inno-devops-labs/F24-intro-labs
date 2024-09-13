@@ -96,7 +96,7 @@ zaurall  pts/1    -                21:57    2:54m  0.03s  0.02s -bash
 root     pts/7    -                23:36    1:15m  0.03s  0.02s -bash
 ```
 
-The system was up for 2 hours and 54 minutes with a low load average. It means that system is under minimal load. It's true because I didn't run any hard programs here.
+The system was up for 2 hours and 54 minutes with a low load average. It means that system is under minimal load. It's true because I didn't run any cpu or ram consuming programs here.
 
 
 # Task 2: Networking Analysis
