@@ -5,16 +5,16 @@
 
 I used `htop` command to find processes that are using most CPU and memory. Using `f6` button I sorted them by the columns. CPU top updates every second. Here what I got:
 
-CPU
+#### CPU
 | PID        | CPU (%)       | MEM (%)          | Command                                                 |
 |------------|---------------|------------------|---------------------------------------------------------|
 | 2401       |  3.3%         | 1.9%             | /home/zaurall/.vscode-server/bin/4849ca9bdf9666755eb463 |
 | 1          |  2.0%         | 0.1%             | /sbin/init                                              |
 | 358        |  0.7%         | 1.2%             | /snap/ubuntu-desktop-installer/1286/usr/bin/python3.10  |
 
-In memory usage we have in top 3 many same processes runed by one command
+In memory usage we have in top many processes runed by one command
 
-Memory
+#### Memory
 | PID        | CPU (%)       | MEM (%)          | Command                                                 |
 |------------|---------------|------------------|---------------------------------------------------------|
 | 2401       |  3.3%         | 1.9%             | /home/zaurall/.vscode-server/bin/4849ca9bdf9666755eb463 |
@@ -23,7 +23,7 @@ Memory
 
 After that I decided to run `iostat` command to see I/O usage:
 
-I/O 
+#### I/O 
 | Device | tps  | kB_read/s | kB_wrtn/s | kB_dscd/s | kB_read | kB_wrtn | kB_dscd |
 |--------|------|-----------|-----------|-----------|---------|---------|---------|
 | sda    | 0.44 | 28.67     | 0.00      | 0.00      | 74161   | 0       | 0       |
@@ -61,5 +61,3 @@ I decided to analyze /var directory using `find /var -type f -print0 | xargs -0 
 2. /var/lib/snapd/seed/snaps/ubuntu-desktop-installer_1276.snap (132 MB)
 3. /var/lib/snapd/seed/snaps/gtk-common-themes_1535.snap (92 MB)
 
-
-# Task 2: Terraform Installation and Nginx Deployment
