@@ -25,15 +25,21 @@ jobs:
         run: |
           echo "System specification:"
           lsb_release -a
-          echo "\nOperating System Info:"
+          echo ""
+          echo "Operating System Info:"
           uname -a
-          echo "\nDisk Space Info:"
+          echo ""
+          echo "Disk Space Info:"
           df -h
-          echo "\nMemory Info:"
+          echo ""
+          echo "Memory Info:"
           free -m
-          echo "\nCPU Info:"
+          echo ""
+          echo "CPU Info:"
           lscpu
-          echo "\nI/O Info:"
+          echo ""
+          echo "I/O Info:"
           iostat 
-          echo "\nNetwork Info"
+          echo ""
+          echo "Network Info"
           ip a
