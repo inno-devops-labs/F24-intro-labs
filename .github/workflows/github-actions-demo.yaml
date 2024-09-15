@@ -5,9 +5,6 @@ on:
     branches:
       - main
       - lab_9
-  pull-request:
-    branches:
-      - main
   workflow_dispatch:
 jobs:
   Explore-GitHub-Actions:
