@@ -50,3 +50,7 @@ Signed commits are a crucial aspect of maintaining the integrity and authenticit
   * Loses individual commit history of the feature branch
 
 The standard merge strategy is preferred because it preserves the commit history. The explicit merge commit indicates that a merge has been invoked, making it easier for team members to understand the project's history. While the squash/rebase and merge strategy simplifies the commit history, it loses the individual commit history of the feature branch. Therefore, the standard merge strategy is the most suitable choice for collaborative environments.
+
+## Report of disabling Squash and Rebase merging
+
+![Here is the image](image.png)
