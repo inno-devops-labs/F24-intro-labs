@@ -19,7 +19,9 @@ These benefits collectively enhance the integrity and trustworthiness of a proje
 Certainly! Here's the summary with the pros and cons reformatted into a table for better clarity:
 
 ---
+# Disabling merge strategies in Github
 
+![Image](image.png)
 # Summary of Merge Strategies:
 
 When working with Git, three common merge strategies are used: **Standard Merge**, **Squash and Merge**, and **Rebase and Merge**. Each has its own benefits and drawbacks:
