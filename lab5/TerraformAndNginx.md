@@ -13,3 +13,8 @@ sudo tee /etc/apt/sources.list.d/hashicorp.list`
 3.
 - `terraform init`
 - `terraform apply`
+
+
+So, I did everything from tutorial. Please, I don't want to copy paste tutorial and my inputs/outputs here, I'm dying how it is boring. It is the most hardest challenge - copy+paste
+
+In folder only 3 files, but they changed during procces. 
