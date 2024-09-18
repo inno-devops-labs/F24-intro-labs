@@ -141,9 +141,9 @@ github.com.             45      IN      A       140.82.121.4
 ;; SERVER: 1.1.1.1#53(1.1.1.1) (UDP)
 ;; WHEN: Wed Sep 18 19:04:39 MSK 2024
 ;; MSG SIZE  rcvd: 55
+```
 
-
-
+```sh
 > dig github.com    
 ; <<>> DiG 9.20.1 <<>> github.com
 ;; global options: +cmd
@@ -165,4 +165,4 @@ github.com.             33      IN      A       140.82.121.3
 ;; MSG SIZE  rcvd: 55
 ```
 
-After I run this command 2 times we see that it returns 2 different ip addresses: 140.82.121.4 and 140.82.121.3. What is reasonable for such a bit platform as github, such approach is used for distribute the load to many machines. (We can also see that in task 2.1 _traceroot_ sometimes use 140.82.121.3 for github.com and sometimes 140.82.121.4, due to the same reasons).
+After I run this command 2 times we see that it returns 2 different ip addresses: 140.82.121.4 and 140.82.121.3. What is reasonable for such a big platform as a github. This approach is used for distributing the load to many machines. (We can also see that in task 2.1 _traceroot_ sometimes use 140.82.121.3 for github.com and sometimes 140.82.121.4, due to the same reasons).
