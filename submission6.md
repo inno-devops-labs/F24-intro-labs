@@ -1,4 +1,4 @@
-# Introduction to DevOps Lab 1
+# Introduction to DevOps Lab 6
 ## Ruslan Izmailov B22-DS-01 
 
 ### Task 1: Operating System Analysis
