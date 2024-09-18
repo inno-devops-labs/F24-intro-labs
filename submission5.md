@@ -14,3 +14,5 @@ df
 
 largest three files
 <img width="425" alt="s5t1p5" src="https://github.com/user-attachments/assets/623e485c-f062-4bfe-9394-24fdf6b772e2">
+
+ANALYSIS: with given commands I saw usage of cpu, ram and harddrive. Since no applications were used except terminal, ram and cpu usage were low. I install only linux on my Virtual Machine, so there are no files except ones from operational system and their size is under 1 GB.
