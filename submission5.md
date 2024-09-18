@@ -159,7 +159,6 @@ As I have many OS on my pc, partitions have slide unordered indexes (aka 1 and 5
 8       ./.git/info
 1156    ./.git
 2404    .
-    
 ```
 As _du_ command produces so many lines of output, I have put  only only the content of the folder with DevOps-course materials (for the lab05)  
 
