@@ -41,5 +41,74 @@ sudo find /var -type f -exec du -ah {} + | sort -rh | head -n 3
 
 # Task 2
 
-- Terraform(IaC tool) allow users to describe and manage cloud and onpremises infrastructure
+## Terraform
 
+    It is IaC tool which allow users to describe and manage cloud and onpremises infrastructure
+
+## Installing
+
+```sh
+sudo pacman -S terraform   
+```
+
+## Build
+
+```sh
+mkdir learn-terraform-docker-container
+cd learn-terraform-docker-container
+touch main.tf
+```
+
+Copy code from the guide
+
+```sh
+terraform {
+  required_providers {
+    docker = {
+      source = "kreuzwerker/docker"
+      version = "~> 3.0.1"
+    }
+  }
+}
+
+provider "docker" {}
+
+resource "docker_image" "nginx" {
+  name         = "nginx:latest"
+  keep_locally = false
+}
+
+resource "docker_container" "nginx" {
+  image = docker_image.nginx.image_id
+  name  = "tutorial"
+  ports {
+    internal = 80
+    external = 8000
+  }
+}
+```
+
+But I can't to build
+
+```sh
+terraform init
+```
+
+```sh
+Initializing the backend...
+Initializing provider plugins...
+- Finding kreuzwerker/docker versions matching "~> 3.0.1"...
+╷
+│ Error: Invalid provider registry host
+│ 
+│ The host "registry.terraform.io" given in provider source address
+│ "registry.terraform.io/kreuzwerker/docker" does not offer a Terraform provider
+│ registry.
+╵
+```
+
+I tried to repeate it using windos system, but I get the same result. 
+
+![Alt text](image-5.png)
+
+Also the same result was getted trying to use vpn(registry.terraform.io cannot be available in my region)
