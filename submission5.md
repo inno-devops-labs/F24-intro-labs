@@ -25,6 +25,7 @@ stress
 ```
 iostat
 ```
+**Output**
 
 ![alt text](./i_o_usage.png)
 
@@ -33,8 +34,6 @@ From the above picture I made the following conclusions:
 - The CPU was idle for 97.17%.
 - Processes from the kernel level use 1.52% of CPU.
 - User processes took 1.24% of CPU.
-
-**Output**
 
 ## Task 2
 
