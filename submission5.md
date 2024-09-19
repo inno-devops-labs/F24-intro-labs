@@ -112,3 +112,14 @@ I tried to repeate it using windos system, but I get the same result.
 ![Alt text](image-5.png)
 
 Also the same result was getted trying to use vpn(registry.terraform.io cannot be available in my region)
+
+Docker also was enabled
+
+I checked connection, but it was good
+
+```sh
+Test-NetConnection registry.terraform.io -Port 443                                                                                                                                                                                                                                                      ComputerName     : registry.terraform.io                                                     RemoteAddress    : 18.245.60.36                                                              RemotePort       : 443                                                                       
+InterfaceAlias   : Беспроводная сеть
+SourceAddress    : 10.91.52.246
+TcpTestSucceeded : True
+```
