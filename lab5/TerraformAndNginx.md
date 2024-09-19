@@ -2,13 +2,13 @@
 
 ## **Nginx Deployment:**
 
-1. Create project folder
+1. Create project folder:
 
     ```shell
     mkdir <path>
     ```
 
-2. Install `terraform`
+2. Install `terraform`:
 
     I used `chocolatey` to install the `terraform` because I use Windows
 
@@ -18,7 +18,7 @@
 
     ![Here is the version of Terraform](images/terraform_v.png)
 
-3. Deploy Nginx
+3. Deploy Nginx:
 
     * Create `main.tf` file with the following config:
 
@@ -52,24 +52,24 @@
         }
         ```
 
-    * Run `init` command
+    * Run `init` command:
 
         ```shell
         terraform init
         ```
 
-    * Apply the container
+    * Apply the container:
 
         ```shell
         terraform apply
         ```
 
-    * Check the container in the Docker or by opening `localhost:8000`
+    * Check the container in the Docker or by opening `localhost:8000`:
 
         ![Here is the docker-cli photo](images/docker_cont_shell.png)
         ![Here is the docker photo](images/docker_container.png)
 
-    * Destroy the container
+    * Destroy the container:
 
         ```shell
         terraform destroy
