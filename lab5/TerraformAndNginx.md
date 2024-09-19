@@ -33,15 +33,15 @@ terraform init
 ```
 ### Output:
 ```bash
- Initializing the backend...
- Initializing provider plugins...
- - Finding docker/docker versions matching "~> 2.0"...
- ╷
- │ Error: Invalid provider registry host
- │ 
- │ The host "registry.terraform.io" given in provider source address
- │ "registry.terraform.io/docker/docker" does not offer a Terraform provider
- │ registry.
+Initializing the backend...
+Initializing provider plugins...
+- Finding kreuzwerker/docker versions matching "~> 3.0.1"...
+╷
+│ Error: Invalid provider registry host
+│ 
+│ The host "registry.terraform.io" given in provider source address
+│ "registry.terraform.io/kreuzwerker/docker" does not offer a Terraform
+│ provider registry.
 ```
 
 
