@@ -43,3 +43,45 @@
 
 
 # Task 2
+
+1. Firstly, I installed terraform to Windows following the instructions
+2. I opened and ran Docker.
+3. Created a lab5 repository create a file called main.tf
+4. Initialize the project, which downloads a plugin called a provider that lets Terraform interact with Docker:
+
+   ![изображение](https://github.com/user-attachments/assets/660d2092-afad-49ad-8bd9-ee0e5ea18654)
+
+
+5. Created the NGINX server with 'terraform apply'
+6. Checked the existence of container:
+
+   ![изображение](https://github.com/user-attachments/assets/77085b9d-3947-4a56-a1a9-8af190002fee)
+
+7. Did some checks:
+
+   ![изображение](https://github.com/user-attachments/assets/6582509f-d707-4d4c-ba58-d52e24f20419)
+
+
+8. According to the tutorial, I changed external port to 8080 instead of 8000, ran the command 'terraform apply':
+
+   ![изображение](https://github.com/user-attachments/assets/002ba363-89ba-4c44-9722-cb611e53a3b1)
+
+9. I ran the 'terraform destroy':
+
+    ![изображение](https://github.com/user-attachments/assets/279f26d3-bdb9-4868-b0bf-27425ad521b7)
+
+10. Created a new file called variables.tf with a block defining a new container_name variable
+11. In main.tf, updated the docker_container resource block to use the new variable
+
+   ![изображение](https://github.com/user-attachments/assets/0e9cecaa-da03-4a7f-8dae-2928d0f66aa0)
+
+12. Created a file called outputs.tf
+13. Ran the 'terraform apply' command:
+
+   ![изображение](https://github.com/user-attachments/assets/d6885c2f-9734-4db1-8772-3e916bc186b9)
+
+14. I destroyed infrastructure:
+
+    ![изображение](https://github.com/user-attachments/assets/1c03e9bd-a456-4791-9ae7-4ae2fe26fcd3)
+
+
