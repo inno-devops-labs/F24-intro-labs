@@ -23,7 +23,7 @@
 3. **260M /var/lib/apt/lists**
 
 ## Analysis:
-It looks like **firefox-bin** is quite the resource hog on my system, taking up a heavy chunk of both CPU and memory. This suggests it might be dealing with a lot of open tabs or extensions.
+It looks like **firefox-bin** is quite the resource hog on my system, taking up a heavy chunk of both CPU and memory. This is maybe because I use lot of open tabs or extensions.
 
 **Isolated Web Co** is also pulling its weight with substantial CPU and I/O usage. It could be running some background tasks or processing data.
 
