@@ -5,3 +5,9 @@ TASK 1
 
 
 INSIGHTS: 12 seconds is too much to merely empty Ubuntu, I blame using Virtual Box with very limited recources. But cpu usage is low, as it should be without started by user processes except for terminal.
+
+TASK 2
+
+<img width="364" alt="s6t2p1" src="https://github.com/user-attachments/assets/b041593c-85a1-43e5-a729-d7387962c305">
+
+INSIGHTS: Given that I still using VPN, access time to google.com is fairly low.
