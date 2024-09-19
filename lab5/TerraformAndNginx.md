@@ -76,8 +76,3 @@
         ```
 
         ![Here is the destroy](images/terraform_destroy.png)
-        
-
-
-
-
