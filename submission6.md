@@ -6,7 +6,7 @@
 
 ### Command: 
 ```bash
-`systemd-analyze
+systemd-analyze
 ```
 ### Output:
 ```bash
