@@ -97,29 +97,39 @@ My CPU includes 16 cores, thus I can conclude that it is mostly idle, since load
 
 1) **Traceroute** - provides a path that packets take from a local machine to the destination server, listing all intermediate hops and how long each hop takes
 
-``traceroute ya.ru``:
+``traceroute google.com``:
 ```
-traceroute to ya.ru (213.180.193.56), 30 hops max, 60 byte packets
- 1  _gateway (192.168.0.1)  1.021 ms  1.891 ms  2.047 ms
- 2  10.242.1.1 (10.242.1.1)  4.947 ms  5.221 ms  5.306 ms
- 3  10.250.0.2 (10.250.0.2)  6.737 ms  6.284 ms  6.544 ms
- 4  10.252.6.1 (10.252.6.1)  8.823 ms  6.739 ms  6.836 ms
- 5  188.170.164.34 (188.170.164.34)  14.547 ms  9.601 ms  8.355 ms
+traceroute to google.com (216.239.38.120), 30 hops max, 60 byte packets
+ 1  _gateway (192.168.0.1)  1.117 ms  1.398 ms  1.797 ms
+ 2  10.242.1.1 (10.242.1.1)  5.650 ms  5.762 ms  5.838 ms
+ 3  10.250.0.2 (10.250.0.2)  6.050 ms  6.176 ms  6.893 ms
+ 4  10.252.6.1 (10.252.6.1)  6.986 ms  7.082 ms  7.182 ms
+ 5  188.170.164.34 (188.170.164.34)  11.899 ms  11.757 ms  12.014 ms
  6  * * *
  7  * * *
- 8  83.169.204.176 (83.169.204.176)  18.698 ms  19.993 ms 83.169.204.166 (83.169.204.166)  25.319 ms
- 9  * * *
-10  * * *
-11  * * *
-12  * * *
-13  * * *
-14  * * *
-... etc ...
+ 8  * * *
+ 9  83.169.204.117 (83.169.204.117)  17.988 ms  18.185 ms  18.610 ms
+10  72.14.222.181 (72.14.222.181)  23.209 ms  23.169 ms  23.140 ms
+11  172.253.75.75 (172.253.75.75)  22.496 ms 192.178.241.181 (192.178.241.181)  26.124 ms 192.178.241.51 (192.178.241.51)  18.852 ms
+12  192.178.241.234 (192.178.241.234)  18.490 ms 209.85.143.20 (209.85.143.20)  19.393 ms 192.178.241.234 (192.178.241.234)  21.515 ms
+13  142.251.49.78 (142.251.49.78)  33.850 ms * 209.85.249.158 (209.85.249.158)  39.025 ms
+14  72.14.238.168 (72.14.238.168)  36.943 ms 108.170.235.204 (108.170.235.204)  34.366 ms 172.253.66.108 (172.253.66.108)  33.858 ms
+15  142.250.56.125 (142.250.56.125)  37.383 ms 216.239.49.113 (216.239.49.113)  41.484 ms 216.239.56.113 (216.239.56.113)  34.706 ms
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  * * *
+23  * * *
+24  * * *
+25  any-in-2678.1e100.net (216.239.38.120)  62.650 ms  59.116 ms  63.039 ms
 ```
 
 #### Summary:
 
-My router is 192.168.0.1 and a packet reaches it from my PC in less than 2ms. The next hop is 10.242.1.1 and takes about 5ms. The following raws print the following hops IP addresses and time to reach them. * * * means the hop's denying to respond. This traceroute shows a fairly efficient network path, with the destination being reached in fewer than 10 hops with low latency (under 30ms, which indicates a good network connection).
+My router is 192.168.0.1 and a packet reaches it from my PC in less than 2ms. The next hop is 10.242.1.1 and takes about 5ms. The following raws print the following hops IP addresses and time to reach them. * * * means the hop's denying to respond. 1-3 hops are initial hops (local). 4-5 - ISP hops (12 ms -  ISP's network handles traffic efficiently). 9-14 hops are Google network (72.x.x.x IP is associated with Google's servers). 216.239.x.x IP (15 and 25 hops) are final servers with Google's domain 1e100.net. Final latency is 63ms, which is a good result for a connection to a global service. This traceroute shows a fairly efficient network path with low latency (under 63ms).
 
 2) **Dig** - provides a DNS query for a given domain.
 
@@ -144,7 +154,7 @@ ya.ru.			300	IN	A	213.180.193.56
 ;; WHEN: Thu Sep 19 18:44:14 MSK 2024
 ;; MSG SIZE  rcvd: 50
 ```
-So, the ya.ru IP address is 213.180.193.56. It tokk 56msec to be completted. 'SERVER: 192.168.0.1#53(192.168.0.1) (UDP)' this is my local router and it is the DNS server. From the answer section: 'ya.ru.			300	IN	A	213.180.193.56' - router sent a packet to ya.ru and ya.ru sent back the response code - 300
+So, the ya.ru IP address is 213.180.193.56. It took 56msec to be completted. 'SERVER: 192.168.0.1#53(192.168.0.1) (UDP)' this is my local router and it is the DNS server. From the answer section: 'ya.ru.			300	IN	A	213.180.193.56' - router sent a packet to ya.ru and ya.ru sent back the response code - 300
 
 #### Summary:
 I can conclude that DNS resolution works very well. It is fast and efficient with low latency.
