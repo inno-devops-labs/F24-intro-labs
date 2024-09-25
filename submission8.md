@@ -3,6 +3,7 @@
 
 ### Task 1: Container Management
 
+#### List Containers:
 ```sh
 > docker ps -a
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
@@ -10,7 +11,7 @@ CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 
 It is empty as recently I did ```docker system prune``` 
 
-Pulling the image: 
+#### Pull Latest Ubuntu Image:
 ```sh
 > docker pull ubuntu:latest     
 latest: Pulling from library/ubuntu
@@ -27,7 +28,7 @@ REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
 ubuntu       latest    b1e9cef3f297   4 weeks ago   78.1MB
 ```             
 
-Running the container: 
+#### Run Container:
 ```sh
 > docker run -it --name ubuntu_container ubuntu:latest
 
@@ -37,7 +38,7 @@ root
 > exit
 ```
 
-Removing the image: 
+#### Remove Image:       
 ```sh 
 > docker rmi ubuntu:latest
 Error response from daemon: conflict: unable to remove repository reference "ubuntu:latest" (must force) - container 821d26035910 is using its referenced image b1e9cef3f297
