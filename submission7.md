@@ -1,10 +1,15 @@
 ## Task 1
 
 1. I installed Virtual Box from the website https://www.virtualbox.org/wiki/Downloads with version `7.1.0`.
-   ![alt text](./virtual_box.png)
+
+![alt text](./virtual_box.png)
 
 2. Then, I installed ubuntu.
    ![alt text](./ubuntu.png)
+
+My virtual machine has the following settings.
+
+![alt text](./virtual_box.png)
 
 3. Add GUI.
 
