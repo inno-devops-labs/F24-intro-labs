@@ -1,0 +1,833 @@
+Supported guest OS types:
+
+ID / Description: Other -- Other/Unknown
+Family:           Other (Other)
+Architecture:     x86
+
+ID / Description: Other_64 -- Other/Unknown (64-bit)
+Family:           Other (Other)
+Architecture:     x86 (64-bit)
+
+ID / Description: Other_arm64 -- Other/Unknown (ARM 64-bit)
+Family:           Other (Other)
+Architecture:     ARMv8 (64-bit)
+
+ID / Description: Windows31 -- Windows 3.1
+Family:           Windows (Microsoft Windows)
+Architecture:     x86
+
+ID / Description: Windows95 -- Windows 95
+Family:           Windows (Microsoft Windows)
+Architecture:     x86
+
+ID / Description: Windows98 -- Windows 98
+Family:           Windows (Microsoft Windows)
+Architecture:     x86
+
+ID / Description: WindowsMe -- Windows ME
+Family:           Windows (Microsoft Windows)
+Architecture:     x86
+
+ID / Description: WindowsNT3x -- Windows NT 3.x
+Family:           Windows (Microsoft Windows)
+Architecture:     x86
+
+ID / Description: WindowsNT4 -- Windows NT 4
+Family:           Windows (Microsoft Windows)
+Architecture:     x86
+
+ID / Description: Windows2000 -- Windows 2000
+Family:           Windows (Microsoft Windows)
+Architecture:     x86
+
+ID / Description: WindowsXP -- Windows XP (32-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86
+
+ID / Description: WindowsXP_64 -- Windows XP (64-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86 (64-bit)
+
+ID / Description: Windows2003 -- Windows 2003 (32-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86
+
+ID / Description: Windows2003_64 -- Windows 2003 (64-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86 (64-bit)
+
+ID / Description: WindowsVista -- Windows Vista (32-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86
+
+ID / Description: WindowsVista_64 -- Windows Vista (64-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86 (64-bit)
+
+ID / Description: Windows2008 -- Windows 2008 (32-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86
+
+ID / Description: Windows2008_64 -- Windows 2008 (64-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86 (64-bit)
+
+ID / Description: Windows7 -- Windows 7 (32-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86
+
+ID / Description: Windows7_64 -- Windows 7 (64-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86 (64-bit)
+
+ID / Description: Windows8 -- Windows 8 (32-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86
+
+ID / Description: Windows8_64 -- Windows 8 (64-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86 (64-bit)
+
+ID / Description: Windows81 -- Windows 8.1 (32-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86
+
+ID / Description: Windows81_64 -- Windows 8.1 (64-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86 (64-bit)
+
+ID / Description: Windows2012_64 -- Windows 2012 (64-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86 (64-bit)
+
+ID / Description: Windows10 -- Windows 10 (32-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86
+
+ID / Description: Windows10_64 -- Windows 10 (64-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86 (64-bit)
+
+ID / Description: Windows2016_64 -- Windows 2016 (64-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86 (64-bit)
+
+ID / Description: Windows2019_64 -- Windows 2019 (64-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86 (64-bit)
+
+ID / Description: Windows11_64 -- Windows 11 (64-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86 (64-bit)
+
+ID / Description: Windows2022_64 -- Windows 2022 (64-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86 (64-bit)
+
+ID / Description: WindowsNT -- Other Windows (32-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86
+
+ID / Description: WindowsNT_64 -- Other Windows (64-bit)
+Family:           Windows (Microsoft Windows)
+Architecture:     x86 (64-bit)
+
+ID / Description: Linux22 -- Linux 2.2 (32-bit)
+Family:           Linux / Linux 2.2 (Linux)
+Architecture:     x86
+
+ID / Description: Linux24 -- Linux 2.4 (32-bit)
+Family:           Linux / Linux 2.4 (Linux)
+Architecture:     x86
+
+ID / Description: Linux24_64 -- Linux 2.4 (64-bit)
+Family:           Linux / Linux 2.4 (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Linux26 -- Linux 2.6 / 3.x / 4.x / 5.x (32-bit)
+Family:           Linux / Linux 2.6 (Linux)
+Architecture:     x86
+
+ID / Description: Linux26_64 -- Linux 2.6 / 3.x / 4.x / 5.x (64-bit)
+Family:           Linux / Linux 2.6 (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: ArchLinux -- Arch Linux (32-bit)
+Family:           Linux / ArchLinux (Linux)
+Architecture:     x86
+
+ID / Description: ArchLinux_64 -- Arch Linux (64-bit)
+Family:           Linux / ArchLinux (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: ArchLinux_arm64 -- Arch Linux (ARM 64-bit)
+Family:           Linux / ArchLinux (Linux)
+Architecture:     ARMv8 (64-bit)
+
+ID / Description: Debian -- Debian (32-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86
+
+ID / Description: Debian_64 -- Debian (64-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Debian_arm64 -- Debian (ARM 64-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     ARMv8 (64-bit)
+
+ID / Description: Debian31 -- Debian 3.1 Sarge (32-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86
+
+ID / Description: Debian4 -- Debian 4.0 Etch (32-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86
+
+ID / Description: Debian4_64 -- Debian 4.0 Etch (64-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Debian5 -- Debian 5.0 Lenny (32-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86
+
+ID / Description: Debian5_64 -- Debian 5.0 Lenny (64-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Debian6 -- Debian 6.0 Squeeze (32-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86
+
+ID / Description: Debian6_64 -- Debian 6.0 Squeeze (64-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Debian7 -- Debian 7 Wheezy (32-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86
+
+ID / Description: Debian7_64 -- Debian 7 Wheezy (64-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Debian8 -- Debian 8 Jessie (32-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86
+
+ID / Description: Debian8_64 -- Debian 8 Jessie (64-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Debian9 -- Debian 9 Stretch (32-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86
+
+ID / Description: Debian9_64 -- Debian 9 Stretch (64-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Debian9_arm64 -- Debian 9 Stretch (ARM 64-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     ARMv8 (64-bit)
+
+ID / Description: Debian10 -- Debian 10 Buster (32-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86
+
+ID / Description: Debian10_64 -- Debian 10 Buster (64-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Debian10_arm64 -- Debian 10 Buster (ARM 64-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     ARMv8 (64-bit)
+
+ID / Description: Debian11 -- Debian 11 Bullseye (32-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86
+
+ID / Description: Debian11_64 -- Debian 11 Bullseye (64-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Debian11_arm64 -- Debian 11 Bullseye (ARM 64-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     ARMv8 (64-bit)
+
+ID / Description: Debian12 -- Debian 12 Bookworm (32-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86
+
+ID / Description: Debian12_64 -- Debian 12 Bookworm (64-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Debian12_arm64 -- Debian 12 Bookworm (ARM 64-bit)
+Family:           Linux / Debian (Linux)
+Architecture:     ARMv8 (64-bit)
+
+ID / Description: Fedora -- Fedora (32-bit)
+Family:           Linux / Fedora (Linux)
+Architecture:     x86
+
+ID / Description: Fedora_64 -- Fedora (64-bit)
+Family:           Linux / Fedora (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Fedora_arm64 -- Fedora (ARM 64-bit)
+Family:           Linux / Fedora (Linux)
+Architecture:     ARMv8 (64-bit)
+
+ID / Description: Gentoo -- Gentoo (32-bit)
+Family:           Linux / Gentoo (Linux)
+Architecture:     x86
+
+ID / Description: Gentoo_64 -- Gentoo (64-bit)
+Family:           Linux / Gentoo (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Mandriva -- Mandriva (32-bit)
+Family:           Linux / Mandriva (Linux)
+Architecture:     x86
+
+ID / Description: Mandriva_64 -- Mandriva (64-bit)
+Family:           Linux / Mandriva (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: OpenMandriva_Lx -- OpenMandriva Lx (32-bit)
+Family:           Linux / Mandriva (Linux)
+Architecture:     x86
+
+ID / Description: OpenMandriva_Lx_64 -- OpenMandriva Lx (64-bit)
+Family:           Linux / Mandriva (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: PCLinuxOS -- PCLinuxOS / PCLOS (32-bit)
+Family:           Linux / PCLinuxOS (Linux)
+Architecture:     x86
+
+ID / Description: PCLinuxOS_64 -- PCLinuxOS / PCLOS (64-bit)
+Family:           Linux / PCLinuxOS (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Mageia -- Mageia (32-bit)
+Family:           Linux / Mageia (Linux)
+Architecture:     x86
+
+ID / Description: Mageia_64 -- Mageia (64-bit)
+Family:           Linux / Mageia (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Oracle -- Oracle Linux (32-bit)
+Family:           Linux / Oracle Linux (Linux)
+Architecture:     x86
+
+ID / Description: Oracle_64 -- Oracle Linux (64-bit)
+Family:           Linux / Oracle Linux (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Oracle_arm64 -- Oracle Linux (ARM 64-bit)
+Family:           Linux / Oracle Linux (Linux)
+Architecture:     ARMv8 (64-bit)
+
+ID / Description: Oracle4 -- Oracle Linux 4.x (32-bit)
+Family:           Linux / Oracle Linux (Linux)
+Architecture:     x86
+
+ID / Description: Oracle4_64 -- Oracle Linux 4.x (64-bit)
+Family:           Linux / Oracle Linux (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Oracle5 -- Oracle Linux 5.x (32-bit)
+Family:           Linux / Oracle Linux (Linux)
+Architecture:     x86
+
+ID / Description: Oracle5_64 -- Oracle Linux 5.x (64-bit)
+Family:           Linux / Oracle Linux (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Oracle6 -- Oracle Linux 6.x (32-bit)
+Family:           Linux / Oracle Linux (Linux)
+Architecture:     x86
+
+ID / Description: Oracle6_64 -- Oracle Linux 6.x (64-bit)
+Family:           Linux / Oracle Linux (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Oracle7_64 -- Oracle Linux 7.x (64-bit)
+Family:           Linux / Oracle Linux (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Oracle8_64 -- Oracle Linux 8.x (64-bit)
+Family:           Linux / Oracle Linux (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Oracle9_64 -- Oracle Linux 9.x (64-bit)
+Family:           Linux / Oracle Linux (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Oracle9_arm64 -- Oracle Linux 9.x (ARM 64-bit)
+Family:           Linux / Oracle Linux (Linux)
+Architecture:     ARMv8 (64-bit)
+
+ID / Description: RedHat -- Red Hat (32-bit)
+Family:           Linux / Red Hat (Linux)
+Architecture:     x86
+
+ID / Description: RedHat_64 -- Red Hat (64-bit)
+Family:           Linux / Red Hat (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: RedHat3 -- Red Hat 3.x (32-bit)
+Family:           Linux / Red Hat (Linux)
+Architecture:     x86
+
+ID / Description: RedHat3_64 -- Red Hat 3.x (64-bit)
+Family:           Linux / Red Hat (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: RedHat4 -- Red Hat 4.x (32-bit)
+Family:           Linux / Red Hat (Linux)
+Architecture:     x86
+
+ID / Description: RedHat4_64 -- Red Hat 4.x (64-bit)
+Family:           Linux / Red Hat (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: RedHat5 -- Red Hat 5.x (32-bit)
+Family:           Linux / Red Hat (Linux)
+Architecture:     x86
+
+ID / Description: RedHat5_64 -- Red Hat 5.x (64-bit)
+Family:           Linux / Red Hat (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: RedHat6 -- Red Hat 6.x (32-bit)
+Family:           Linux / Red Hat (Linux)
+Architecture:     x86
+
+ID / Description: RedHat6_64 -- Red Hat 6.x (64-bit)
+Family:           Linux / Red Hat (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: RedHat7_64 -- Red Hat 7.x (64-bit)
+Family:           Linux / Red Hat (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: RedHat8_64 -- Red Hat 8.x (64-bit)
+Family:           Linux / Red Hat (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: RedHat9_64 -- Red Hat 9.x (64-bit)
+Family:           Linux / Red Hat (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: OpenSUSE -- openSUSE (32-bit)
+Family:           Linux / openSUSE (Linux)
+Architecture:     x86
+
+ID / Description: OpenSUSE_64 -- openSUSE (64-bit)
+Family:           Linux / openSUSE (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: OpenSUSE_Leap_64 -- openSUSE Leap (64-bit)
+Family:           Linux / openSUSE (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: OpenSUSE_Leap_arm64 -- openSUSE Leap (ARM 64-bit)
+Family:           Linux / openSUSE (Linux)
+Architecture:     ARMv8 (64-bit)
+
+ID / Description: OpenSUSE_Tumbleweed -- openSUSE Tumbleweed (32-bit)
+Family:           Linux / openSUSE (Linux)
+Architecture:     x86
+
+ID / Description: OpenSUSE_Tumbleweed_64 -- openSUSE Tumbleweed (64-bit)
+Family:           Linux / openSUSE (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: OpenSUSE_Tumbleweed_arm64 -- openSUSE Tumbleweed (ARM 64-bit)
+Family:           Linux / openSUSE (Linux)
+Architecture:     ARMv8 (64-bit)
+
+ID / Description: SUSE_LE -- SUSE Linux Enterprise (32-bit)
+Family:           Linux / SUSE (Linux)
+Architecture:     x86
+
+ID / Description: SUSE_LE_64 -- SUSE Linux Enterprise (64-bit)
+Family:           Linux / SUSE (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Turbolinux -- Turbolinux (32-bit)
+Family:           Linux / TurboLinux (Linux)
+Architecture:     x86
+
+ID / Description: Turbolinux_64 -- Turbolinux (64-bit)
+Family:           Linux / TurboLinux (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu -- Ubuntu (32-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86
+
+ID / Description: Ubuntu_64 -- Ubuntu (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu_arm64 -- Ubuntu (ARM 64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     ARMv8 (64-bit)
+
+ID / Description: Ubuntu10_LTS -- Ubuntu 10.04 LTS (Lucid Lynx) (32-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86
+
+ID / Description: Ubuntu10_LTS_64 -- Ubuntu 10.04 LTS (Lucid Lynx) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu10 -- Ubuntu 10.10 (Maverick Meerkat) (32-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86
+
+ID / Description: Ubuntu10_64 -- Ubuntu 10.10 (Maverick Meerkat) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu11 -- Ubuntu 11.04 (Natty Narwhal) / 11.10 (Oneiric Ocelot) (32-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86
+
+ID / Description: Ubuntu11_64 -- Ubuntu 11.04 (Natty Narwhal) / 11.10 (Oneiric Ocelot) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu12_LTS -- Ubuntu 12.04 LTS (Precise Pangolin) (32-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86
+
+ID / Description: Ubuntu12_LTS_64 -- Ubuntu 12.04 LTS (Precise Pangolin) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu12 -- Ubuntu 12.10 (Quantal Quetzal) (32-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86
+
+ID / Description: Ubuntu12_64 -- Ubuntu 12.10 (Quantal Quetzal) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu13 -- Ubuntu 13.04 (Raring Ringtail) / 13.10 (Saucy Salamander) (32-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86
+
+ID / Description: Ubuntu13_64 -- Ubuntu 13.04 (Raring Ringtail) / 13.10 (Saucy Salamander) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu14_LTS -- Ubuntu 14.04 LTS (Trusty Tahr) (32-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86
+
+ID / Description: Ubuntu14_LTS_64 -- Ubuntu 14.04 LTS (Trusty Tahr) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu14 -- Ubuntu 14.10 (Utopic Unicorn) (32-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86
+
+ID / Description: Ubuntu14_64 -- Ubuntu 14.10 (Utopic Unicorn) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu15 -- Ubuntu 15.04 (Vivid Vervet) / 15.10 (Wily Werewolf) (32-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86
+
+ID / Description: Ubuntu15_64 -- Ubuntu 15.04 (Vivid Vervet) / 15.10 (Wily Werewolf) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu16_LTS -- Ubuntu 16.04 LTS (Xenial Xerus) (32-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86
+
+ID / Description: Ubuntu16_LTS_64 -- Ubuntu 16.04 LTS (Xenial Xerus) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu16 -- Ubuntu 16.10 (Yakkety Yak) (32-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86
+
+ID / Description: Ubuntu16_64 -- Ubuntu 16.10 (Yakkety Yak) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu17 -- Ubuntu 17.04 (Zesty Zapus) / 17.10 (Artful Aardvark) (32-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86
+
+ID / Description: Ubuntu17_64 -- Ubuntu 17.04 (Zesty Zapus) / 17.10 (Artful Aardvark) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu18_LTS -- Ubuntu 18.04 LTS (Bionic Beaver) (32-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86
+
+ID / Description: Ubuntu18_LTS_64 -- Ubuntu 18.04 LTS (Bionic Beaver) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu18 -- Ubuntu 18.10 (Cosmic Cuttlefish) (32-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86
+
+ID / Description: Ubuntu18_64 -- Ubuntu 18.10 (Cosmic Cuttlefish) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu19 -- Ubuntu 19.04 (Disco Dingo) / 19.10 (Eoan Ermine) (32-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86
+
+ID / Description: Ubuntu19_64 -- Ubuntu 19.04 (Disco Dingo) / 19.10 (Eoan Ermine) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu20_LTS_64 -- Ubuntu 20.04 LTS (Focal Fossa) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu20_64 -- Ubuntu 20.10 (Groovy Gorilla) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu21_64 -- Ubuntu 21.04 (Hirsute Hippo) / 21.10 (Impish Indri) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu22_LTS_64 -- Ubuntu 22.04 LTS (Jammy Jellyfish) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu22_64 -- Ubuntu 22.10 (Kinetic Kudu) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu22_arm64 -- Ubuntu 22.10 (Kinetic Kudu) (ARM 64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     ARMv8 (64-bit)
+
+ID / Description: Ubuntu23_64 -- Ubuntu 23.04 (Lunar Lobster) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu23_arm64 -- Ubuntu 23.04 (Lunar Lobster) (ARM 64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     ARMv8 (64-bit)
+
+ID / Description: Ubuntu24_LTS_64 -- Ubuntu 24.04 LTS (Noble Numbat) (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Ubuntu24_LTS_arm64 -- Ubuntu 24.04 LTS (Noble Numbat) (ARM 64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     ARMv8 (64-bit)
+
+ID / Description: Lubuntu -- Lubuntu (32-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86
+
+ID / Description: Lubuntu_64 -- Lubuntu (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Xubuntu -- Xubuntu (32-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86
+
+ID / Description: Xubuntu_64 -- Xubuntu (64-bit)
+Family:           Linux / Ubuntu (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Xandros -- Xandros (32-bit)
+Family:           Linux / Xandros (Linux)
+Architecture:     x86
+
+ID / Description: Xandros_64 -- Xandros (64-bit)
+Family:           Linux / Xandros (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Linux -- Other Linux (32-bit)
+Family:           Linux / Other Linux (Linux)
+Architecture:     x86
+
+ID / Description: Linux_64 -- Other Linux (64-bit)
+Family:           Linux / Other Linux (Linux)
+Architecture:     x86 (64-bit)
+
+ID / Description: Solaris -- Oracle Solaris 10 5/09 and earlier (32-bit)
+Family:           Solaris (Solaris)
+Architecture:     x86
+
+ID / Description: Solaris_64 -- Oracle Solaris 10 5/09 and earlier (64-bit)
+Family:           Solaris (Solaris)
+Architecture:     x86 (64-bit)
+
+ID / Description: Solaris10U8_or_later -- Oracle Solaris 10 10/09 and later (32-bit)
+Family:           Solaris (Solaris)
+Architecture:     x86
+
+ID / Description: Solaris10U8_or_later_64 -- Oracle Solaris 10 10/09 and later (64-bit)
+Family:           Solaris (Solaris)
+Architecture:     x86 (64-bit)
+
+ID / Description: Solaris11_64 -- Oracle Solaris 11 (64-bit)
+Family:           Solaris (Solaris)
+Architecture:     x86 (64-bit)
+
+ID / Description: OpenSolaris -- OpenSolaris / Illumos / OpenIndiana (32-bit)
+Family:           Solaris (Solaris)
+Architecture:     x86
+
+ID / Description: OpenSolaris_64 -- OpenSolaris / Illumos / OpenIndiana (64-bit)
+Family:           Solaris (Solaris)
+Architecture:     x86 (64-bit)
+
+ID / Description: FreeBSD -- FreeBSD (32-bit)
+Family:           BSD / FreeBSD (BSD)
+Architecture:     x86
+
+ID / Description: FreeBSD_64 -- FreeBSD (64-bit)
+Family:           BSD / FreeBSD (BSD)
+Architecture:     x86 (64-bit)
+
+ID / Description: FreeBSD_arm64 -- FreeBSD (ARM 64-bit)
+Family:           BSD / FreeBSD (BSD)
+Architecture:     ARMv8 (64-bit)
+
+ID / Description: OpenBSD -- OpenBSD (32-bit)
+Family:           BSD / OpenBSD (BSD)
+Architecture:     x86
+
+ID / Description: OpenBSD_64 -- OpenBSD (64-bit)
+Family:           BSD / OpenBSD (BSD)
+Architecture:     x86 (64-bit)
+
+ID / Description: OpenBSD_arm64 -- OpenBSD (ARM 64-bit)
+Family:           BSD / OpenBSD (BSD)
+Architecture:     ARMv8 (64-bit)
+
+ID / Description: NetBSD -- NetBSD (32-bit)
+Family:           BSD / NetBSD (BSD)
+Architecture:     x86
+
+ID / Description: NetBSD_64 -- NetBSD (64-bit)
+Family:           BSD / NetBSD (BSD)
+Architecture:     x86 (64-bit)
+
+ID / Description: NetBSD_arm64 -- NetBSD (ARM 64-bit)
+Family:           BSD / NetBSD (BSD)
+Architecture:     ARMv8 (64-bit)
+
+ID / Description: OS21x -- OS/2 1.x
+Family:           OS2 (IBM OS/2)
+Architecture:     x86
+
+ID / Description: OS2Warp3 -- OS/2 Warp 3
+Family:           OS2 (IBM OS/2)
+Architecture:     x86
+
+ID / Description: OS2Warp4 -- OS/2 Warp 4
+Family:           OS2 (IBM OS/2)
+Architecture:     x86
+
+ID / Description: OS2Warp45 -- OS/2 Warp 4.5
+Family:           OS2 (IBM OS/2)
+Architecture:     x86
+
+ID / Description: OS2eCS -- eComStation
+Family:           OS2 (IBM OS/2)
+Architecture:     x86
+
+ID / Description: OS2ArcaOS -- ArcaOS
+Family:           OS2 (IBM OS/2)
+Architecture:     x86
+
+ID / Description: OS2 -- Other OS/2
+Family:           OS2 (IBM OS/2)
+Architecture:     x86
+
+ID / Description: MacOS -- Mac OS X (32-bit)
+Family:           MacOS (Mac OS X)
+Architecture:     x86
+
+ID / Description: MacOS_64 -- Mac OS X (64-bit)
+Family:           MacOS (Mac OS X)
+Architecture:     x86 (64-bit)
+
+ID / Description: MacOS106 -- Mac OS X 10.6 Snow Leopard (32-bit)
+Family:           MacOS (Mac OS X)
+Architecture:     x86
+
+ID / Description: MacOS106_64 -- Mac OS X 10.6 Snow Leopard (64-bit)
+Family:           MacOS (Mac OS X)
+Architecture:     x86 (64-bit)
+
+ID / Description: MacOS107_64 -- Mac OS X 10.7 Lion (64-bit)
+Family:           MacOS (Mac OS X)
+Architecture:     x86 (64-bit)
+
+ID / Description: MacOS108_64 -- Mac OS X 10.8 Mountain Lion (64-bit)
+Family:           MacOS (Mac OS X)
+Architecture:     x86 (64-bit)
+
+ID / Description: MacOS109_64 -- Mac OS X 10.9 Mavericks (64-bit)
+Family:           MacOS (Mac OS X)
+Architecture:     x86 (64-bit)
+
+ID / Description: MacOS1010_64 -- Mac OS X 10.10 Yosemite (64-bit)
+Family:           MacOS (Mac OS X)
+Architecture:     x86 (64-bit)
+
+ID / Description: MacOS1011_64 -- Mac OS X 10.11 El Capitan (64-bit)
+Family:           MacOS (Mac OS X)
+Architecture:     x86 (64-bit)
+
+ID / Description: MacOS1012_64 -- macOS 10.12 Sierra (64-bit)
+Family:           MacOS (Mac OS X)
+Architecture:     x86 (64-bit)
+
+ID / Description: MacOS1013_64 -- macOS 10.13 High Sierra (64-bit)
+Family:           MacOS (Mac OS X)
+Architecture:     x86 (64-bit)
+
+ID / Description: DOS -- DOS
+Family:           Other (Other)
+Architecture:     x86
+
+ID / Description: Netware -- Netware
+Family:           Other (Other)
+Architecture:     x86
+
+ID / Description: L4 -- L4
+Family:           Other (Other)
+Architecture:     x86
+
+ID / Description: QNX -- QNX
+Family:           Other (Other)
+Architecture:     x86
+
+ID / Description: JRockitVE -- JRockitVE
+Family:           Other (Other)
+Architecture:     x86
+
+ID / Description: VBoxBS_64 -- VirtualBox Bootsector Test (64-bit)
+Family:           Other (Other)
+Architecture:     x86 (64-bit)
