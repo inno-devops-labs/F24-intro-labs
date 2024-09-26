@@ -17,6 +17,8 @@ Information about commands from this site: https://devhops.ru/dvps/virtualbox/vb
 Output:
 
 <img width="481" alt="s7t2p1" src="https://github.com/user-attachments/assets/515766a9-c234-4ee5-9ff9-c25d884eedd9">
+<img width="1280" alt="s7t1p1_1" src="https://github.com/user-attachments/assets/42f0fc5d-68f5-4c43-adc3-3e2ee9e7ddb3">
+<img width="641" alt="s7t2p1_2" src="https://github.com/user-attachments/assets/211b9f2f-cb45-4de3-a8d4-8d8e93f4b987">
 <img width="497" alt="s7t2p2" src="https://github.com/user-attachments/assets/78f6b1d6-4996-4c1c-8d23-777c7ca1ebc6">
 
 unfortunetly, there no information about network available.
