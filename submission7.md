@@ -84,7 +84,6 @@ ip a
 ```
 ## Output:
 ```bash
-ip a
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
     inet 127.0.0.1/8 scope host lo
@@ -109,4 +108,29 @@ ip a
                           BRSB-eIBRS Not affected; BHI Retpoline
   Srbds:                  Unknown: Dependent on hypervisor status
   Tsx async abort:        Not affected
+```
+## Tool/Command for Operating System Specifications:
+```bash
+neofetch
+```
+## Output:
+```bash
+...-:::::-...                 VM@VM 
+-----------
+OS: Ubuntu 22.04.5 LTS x86_64 
+Host: VirtualBox 
+Kernel: 5.15.0-91-generic 
+Uptime: 2 hours, 3 mins 
+Packages: 1532 (dpkg) 
+Shell: bash 5.1.16 
+Resolution: 1366x768 
+DE: GNOME 42 
+WM: Mutter 
+WM Theme: Yaru 
+Theme: Yaru [GTK2/3] 
+Icons: Yaru [GTK2/3] 
+Terminal: gnome-terminal 
+CPU: Intel i5-6300U (4) @ 3.000GHz 
+GPU: Intel Skylake GT2 [HD Graphics] 
+Memory: 4096MiB / 7854MiB 
 ```
