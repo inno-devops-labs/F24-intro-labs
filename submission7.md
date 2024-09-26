@@ -11,3 +11,14 @@
 ![alt text](image-3.png)
 
 ![alt text](image-5.png)
+
+
+# Hardware and OS Details
+> sudo **lshw** > lshw_output.txt
+
+output in file [lshw_output.txt](lshw_output.txt)
+
+### OS details
+> **hostnamectl** > os_details.txt
+
+output in file [os_details.txt](os_details.txt)
