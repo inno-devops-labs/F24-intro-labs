@@ -93,7 +93,27 @@ Also, I can check the web-page:
 <img src="https://raw.githubusercontent.com/caxapb/New/main/data/nginx.jpg" alt="CPU" width="500"/>
 
 
-3. ``docker cp index.html nginx_container:/usr/share/nginx/html/index.html`` - copy the HTML file (index.html) to the container
+3. The original repository contains 'index.html' from the very beginning of the course. Thus, I decided to leave it as it is:
+```
+<!DOCTYPE html> 
+<!-- You can modify it as you wish -->
+<html>
+<head>
+    <title>My Simple Website</title>
+</head>
+<body>
+    <h1>Welcome to My Simple Website</h1>
+    <p>This is the content of the folder.</p>
+    <ul>
+        <li>File 1</li>
+        <li>File 2</li>
+        <li>File 3</li>
+    </ul>
+</body>
+</html>
+```
+
+``docker cp index.html nginx_container:/usr/share/nginx/html/index.html`` - copy the HTML file (index.html) to the container
 ```
 Successfully copied 2.05kB to nginx_container:/usr/share/nginx/html/index.html
 ```
