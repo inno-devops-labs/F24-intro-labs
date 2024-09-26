@@ -65,7 +65,13 @@ Vulnerabilities:
   Gather data sampling:   Unknown: Dependent on hypervisor status
   Itlb multihit:          KVM: Mitigation: VMX unsupported
   L1tf:                   Mitigation; PTE Inversion
-ip a
+```
+## Tool/Command For RAM information: 
+```bash
+free -h
+```# System Information Tools
+## Tool/Command :
+```baship a
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
     inet 127.0.0.1/8 scope host lo
@@ -91,13 +97,6 @@ ip a
   Srbds:                  Unknown: Dependent on hypervisor status
   Tsx async abort:        Not affected
 
-```
-## Tool/Command For RAM information: 
-```bash
-free -h
-```# System Information Tools
-## Tool/Command :
-```bash
 lscpu
 ```
 ## Output:
