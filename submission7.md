@@ -1,4 +1,4 @@
-# VM Deployment
+# Task 1 : VM Deployment
 
 ## VirtualBox Version
 - Version: 7.0.20
@@ -17,34 +17,12 @@
    - Network: NAT
    - Storage: Ubuntu ISO attached as a virtual CD/DVD drive
 5. Installed Ubuntu 22.04 on ## Tool/Command:
-```bash
-ip a
-```
-## Output:
-```bash
-1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
-    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
-    inet 127.0.0.1/8 scope host lo
-       valid_lft forever preferred_lft forever
-    inet6 ::1/128 scope host 
-       valid_lft forever preferred_lft forever
-2: enp0s31f6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
-    link/ether 54:ee:75:bd:70:11 brd ff:ff:ff:ff:ff:ff
-    inet 10.244.1.75/24 brd 10.244.1.255 scope global dynamic noprefixroute enp0s31f6
-       valid_lft 573464sec preferred_lft 573464sec
-    inet6 fe80::7e22:6bc6:b358:bf36/64 scope link noprefixroute 
-       valid_lft forever preferred_lft forever
-```
-## Output:
-```bash
-                 total        used        free      shared  buff/cache   available
-Mem:           7.8Gi       844Mi       359Mi       195Mi       6.6Gi       6.5Gi
-Swap:          2.0Gi        10Mi       2.0Gi
-```the VM.
+
 6. Screenshot of the VM running Ubuntu:
    
    ![VM Screenshot](screen_shot.png)
-# System Information Tools
+# Task2: System Information Tools:
+
 ## Tool/Command For Processor Information :
 ```bash
 lscpu
