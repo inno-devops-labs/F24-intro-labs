@@ -1,7 +1,12 @@
-25GB cirtual disk; 2048MB; 2cores; Версия 7.1.0 r164728 (Qt6.5.3)
+## Task 1
+With VertualBox version 7.1.0 r164728 (Qt6.5.3)
+
+I've created a VM with ubuntu. For it I've allocated 25GB virtual disk; 2048MB RAM; 2cores.
 
 ![1727344278355](image/submission7/1727344278355.png)
 
+## Task 2
+**Processor information**:
 ```bash
 lscpu
 Architecture:             x86_64
@@ -58,12 +63,15 @@ Vulnerabilities:
   Tsx async abort:        Not affected
 ```
 
+**RAM information**
 ```bash
 free -h
                total        used        free      shared  buff/cache   available
 Mem:           1,9Gi       1,1Gi       129Mi        53Mi       711Mi       642Mi
 Swap:          2,6Gi       225Mi       2,4Gi
 ```
+
+**Network information**
 
 ```bash
 ip addr show
@@ -85,6 +93,7 @@ ip addr show
        valid_lft forever preferred_lft forever
 ```
 
+**Operating System Specification**
 ```bash
 neofetch
             .-/+oossssoo+/-.               yura@yura
