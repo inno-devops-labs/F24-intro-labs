@@ -1,4 +1,4 @@
-<img width="497" alt="image" src="https://github.com/user-attachments/assets/7ca13379-2a14-47cd-91c9-b61b98f1b5d0">TASK1:
+TASK1:
 
 The iso of Ubuntu 22.04 were sownloases from: https://releases.ubuntu.com/22.04/
 
