@@ -22,3 +22,9 @@ Output:
 <img width="497" alt="s7t2p2" src="https://github.com/user-attachments/assets/78f6b1d6-4996-4c1c-8d23-777c7ca1ebc6">
 
 unfortunetly, there no information about network available.
+
+Available os types:
+
+<img width="432" alt="s7t2p3" src="https://github.com/user-attachments/assets/a82cfb48-bd80-48e2-93e1-0c849cbeea2c">
+
+Full list is in file "Supported guest OS types.txt"
