@@ -27,37 +27,70 @@ lscpu
 ```
 ## Output:
 ```bash
-Architecture:            x86_64
-CPU op-mode(s):        32-bit, 64-bit
-Address sizes:         39 bits physical, 48 bits virtual
-Byte Order:            Little Endian
-CPU(s):                  4
-On-line CPU(s) list:   0-3
-Vendor ID:               GenuineIntel
-Model name:            Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz
-  CPU family:          6
-  Model:               78
-  Thread(s) per core:  2
-  Core(s) per socket:  2
-  Socket(s):           1
-  Stepping:            3
-  CPU max MHz:         3000.0000
-  CPU min MHz:         400.0000
-  BogoMIPS:            4999.90
-  Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mc
-                       a cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss 
-                       ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art
-                       arch_perfmon pebs bts rep_good nopl xtopology nonstop_
-                       tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cp
-                       l vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid ss
-                       e4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes 
-                       xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_f
-                       ault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_sh
-                       adow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adj
-                       ust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx sma
-                       p clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dt
-                       herm ida arat pln pts hwp hwp_notify hwp_act_window hwp
-                       _epp md_clear flush_l1d arch_capabilities
+Architecture:             x86_64
+  CPU op-mode(s):         32-bit, 64-bit
+  Address sizes:          39 bits physical, 48 bits virtual
+  Byte Order:             Little Endian
+CPU(s):                   2
+  On-line CPU(s) list:    0,1
+Vendor ID:                GenuineIntel
+  Model name:             Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz
+    CPU family:           6
+    Model:                78
+    Thread(s) per core:   1
+    Core(s) per socket:   2
+    Socket(s):            1
+    Stepping:             3
+    BogoMIPS:             4991.99
+    Flags:                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge m
+                          ca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall
+                           nx rdtscp lm constant_tsc rep_good nopl xtopology non
+                          stop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 cx16
+                           pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx 
+                          rdrand hypervisor lahf_lm abm 3dnowprefetch pti fsgsba
+                          se bmi1 avx2 bmi2 invpcid rdseed clflushopt arat md_cl
+                          ear flush_l1d arch_capabilities
+Virtualization features:  
+  Hypervisor vendor:      KVM
+  Virtualization type:    full
+Caches (sum of all):      
+  L1d:                    64 KiB (2 instances)
+  L1i:                    64 KiB (2 instances)
+  L2:                     512 KiB (2 instances)
+  L3:                     6 MiB (2 instances)
+NUMA:                     
+  NUMA node(s):           1
+  NUMA node0 CPU(s):      0,1
+Vulnerabilities:          
+  Gather data sampling:   Unknown: Dependent on hypervisor status
+  Itlb multihit:          KVM: Mitigation: VMX unsupported
+  L1tf:                   Mitigation; PTE Inversion
+ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:11:de:5d brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp0s3
+       valid_lft 84654sec preferred_lft 84654sec
+    inet6 fe80::50d4:8177:e8d2:da31/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+  Meltdown:               Mitigation; PTI
+  Mmio stale data:        Mitigation; Clear CPU buffers; SMT Host state unknown
+  Reg file data sampling: Not affected
+  Retbleed:               Vulnerable
+  Spec rstack overflow:   Not affected
+  Spec store bypass:      Vulnerable
+  Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointe
+                          r sanitization
+  Spectre v2:             Mitigation; Retpolines; STIBP disabled; RSB filling; P
+                          BRSB-eIBRS Not affected; BHI Retpoline
+  Srbds:                  Unknown: Dependent on hypervisor status
+  Tsx async abort:        Not affected
+
 ```
 ## Tool/Command:
 ```bash
@@ -65,7 +98,7 @@ free -h
 ```
 ## Output:
 ```bash
-               total        used        free      shared  buff/cache   available
-Mem:            4,0Gi       2,1Gi       1,9Gi       781Mi       1,0Gi       3,0Gi
-Swap:          2,0Gi       490Mi       1,5Gi
+                 total        used        free      shared  buff/cache   available
+Mem:           7.8Gi       844Mi       359Mi       195Mi       6.6Gi       6.5Gi
+Swap:          2.0Gi        10Mi       2.0Gi
 ```
