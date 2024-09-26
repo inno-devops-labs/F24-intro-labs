@@ -12,6 +12,7 @@ Were applied standart settings except for cpu (number of cores extended) and ram
 
 TASK2:
 
+Tool used: Windows PowersShell.
 Information about commands from this site: https://devhops.ru/dvps/virtualbox/vboxmanage/
 
 Output:
