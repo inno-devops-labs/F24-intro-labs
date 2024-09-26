@@ -28,7 +28,7 @@ and launched the virtual machine with following parameters:
 ### RAM info
 - I used `free -h` to display  about total, used, 
 and available memory in a human-readable format:
-![RAM info](ram.png)
+![RAM info](memory.png)
 
 
 ### Network info
@@ -36,5 +36,10 @@ and available memory in a human-readable format:
 ![Network](network.png)
 
 ## 2.Operating System Specifications
+- To display the basic OS information we can use `uname -a`:
 
+![](uname.png)
 
+- Otherwise, there is `hostnamectl` command for example:
+
+![](hostnamectl.png)
