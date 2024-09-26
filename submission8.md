@@ -151,3 +151,22 @@ C /etc/nginx
 C /etc/nginx/conf.d
 C /etc/nginx/conf.d/default.conf
 ```
+
+### Docker Diff Command Output Summary
+
+The `docker diff` command lists changes made to a container’s filesystem compared to the image it was created from. The leading `C` indicates files or directories that have been **changed**. Here's an overview of the changes:
+
+- **`/run`**: The runtime directory has been modified. It typically contains runtime data like PID or socket files, which change as services start or stop.
+  
+- **`/run/nginx.pid`**: The NGINX PID file has been altered, indicating a change in the process ID of the NGINX service, often reflecting a service restart or modification.
+
+- **`/etc`**: The system-wide configuration directory has been changed. This might involve updates to system settings.
+
+- **`/etc/nginx`**: The NGINX configuration directory has been modified, possibly due to changes in NGINX’s settings.
+
+- **`/etc/nginx/conf.d`**: This subdirectory, which stores additional NGINX configuration files (like site-specific settings), has been modified.
+
+- **`/etc/nginx/conf.d/default.conf`**: The default NGINX configuration file has changed, indicating modifications to NGINX's default behavior in handling traffic.
+
+In summary, the container shows changes to NGINX configuration files and runtime data, affecting how NGINX operates within the container.
+
