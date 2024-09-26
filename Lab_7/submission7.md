@@ -4,7 +4,13 @@ VirtualBox version number - 7.0.10 r158379 (Qt5.15.2)
 
 I decided to create a new Virtual Machine (VM) and choose Ubuntu 22.04.4
 
-During the deployment I set up name and username of the system, RAM volume, number of CPU cores and allocated Memory. After that I created VM and deployed it.
+During the deployment I set up 
+- name and username of the system and choosed iso as Ubuntu 22.04.4
+- RAM volume
+- number of CPU cores
+- allocated Memory
+
+After that I created VM and deployed it.
 
 I have following VM settings:
 
