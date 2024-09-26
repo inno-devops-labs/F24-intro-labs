@@ -155,7 +155,7 @@ C /etc/nginx/conf.d/default.conf
 ### Docker Diff Command Output Summary
 
 
-- **`/run`**: The runtime directory has been modified. It typically contains runtime data like PID or socket files.
+- **`/run`**: The runtime directory has been modified.
   
 - **`/run/nginx.pid`**: The NGINX PID file has been altered, indicating a change in the process ID of the NGINX service.
 
