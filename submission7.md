@@ -11,12 +11,12 @@
    - Type: Linux
    - Version: Ubuntu (64-bit)
    - Memory: 4096 MB
-   - Hard Disk: 25 GB dynamically allocated
+   - Hard Disk: 25 GB \
 4. Configured VM settings:
    - Processor: 2 cores
    - Network: NAT
    - Storage: Ubuntu ISO attached as a virtual CD/DVD drive
-5. Installed Ubuntu 22.04 on ## Tool/Command:
+5. Installed Ubuntu 22.04.5
 
 6. Screenshot of the VM running Ubuntu:
    
