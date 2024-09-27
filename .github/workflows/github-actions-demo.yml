@@ -31,3 +31,5 @@ jobs:
         run: lsb_release -a
       - name: Check hardware information
         run: lspci
+      - name: Check dick information
+        run: fdisk -l
