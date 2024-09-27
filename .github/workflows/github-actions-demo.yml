@@ -32,4 +32,4 @@ jobs:
       - name: Check hardware information
         run: lspci
       - name: Check dick information
-        run: fdisk -l
+        run: sudo fdisk -l
