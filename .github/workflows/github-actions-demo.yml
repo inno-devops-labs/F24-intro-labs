@@ -22,4 +22,12 @@ jobs:
     environment: manual
     steps:
       - name: manual
-        run: echo 'manual trigger was run'
+        run: echo "manual trigger was run"
+  get-system-information:
+    needs: [Explore-GitHub-Actions]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check os version
+        run: lsb_release -a
+      - name: Check hardware information
+        run: lspci
