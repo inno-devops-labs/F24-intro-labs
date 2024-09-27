@@ -16,3 +16,10 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+  add-manual-trigger:
+    needs: [Explore-GitHub-Actions]
+    runs-on: ubuntu-latest
+    environment: manual
+    steps:
+      - name: manual
+      - run: echo 'manual trigger was run'
