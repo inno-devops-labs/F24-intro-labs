@@ -22,4 +22,4 @@ jobs:
     environment: manual
     steps:
       - name: manual
-      - run: echo 'manual trigger was run'
+        run: echo 'manual trigger was run'
