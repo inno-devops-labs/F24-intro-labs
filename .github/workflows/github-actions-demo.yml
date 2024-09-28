@@ -5,8 +5,8 @@ jobs:
   Gather-System-Information:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Gather Information
-        uses: actions/checkout@v3
         run: |
           uname -a
           lspcu
