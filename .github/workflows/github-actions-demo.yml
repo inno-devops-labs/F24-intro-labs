@@ -9,6 +9,6 @@ jobs:
       - name: Gather Information
         run: |
           uname -a
-          lspcu
+          lscpu
           df -h
           free -m
