@@ -49,3 +49,33 @@ jobs:
 ![alt text](github_actions_proof.png)
 
 
+
+
+### Task 2: Gathering System Information and Manual Triggering
+
+#### 1. Setup manual trigger
+
+To setup manual trigger, I have replaced the section: 
+```yaml
+on: [push] 
+```  
+on: 
+```yaml
+on: 
+  workflow_dispatch:
+```
+
+#### 2. Gather System Information:
+
+To add additional step, I have added one more step for the existing job: 
+
+```yaml
+- name: Get System Information
+    run: |
+        echo "Runner:"
+        uname -a
+        echo "Hardware:"
+        sudo lshw -short
+        echo "Operating system:"
+        lsb_release -a
+```
