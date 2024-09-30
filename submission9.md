@@ -37,4 +37,15 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
 ```
 
-#### 4. Results: 
+#### 4. Key concepts: 
+1. Automation: With help of GitHub actions there can be automated lots of development processes such as code testing, ml-models validation, deployment. 
+
+2. Workflows: A workflow is a configurable automated process that will run one or more jobs. Workflows are defined by a YAML files in repository and will run by the specified trigger. 
+
+3. Jobs: A job is a set of steps in a workflow that is executed on the same runner using the same evironment. There can be defined some dependencies between jobs and created a build matrices for jobs (e.g. test code in several OS types).
+
+
+#### 5. Results: 
+![alt text](github_actions_proof.png)
+
+
