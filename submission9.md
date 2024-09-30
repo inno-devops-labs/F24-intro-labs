@@ -79,3 +79,6 @@ To add additional step, I have added one more step for the existing job:
         echo "Operating system:"
         lsb_release -a
 ```
+
+#### 3. Solving problems: 
+After I pushed step 2 the button to mannually trigeger workflow does not appear. Then I found that workflow should be in the master branch, so I copied it there.  
