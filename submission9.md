@@ -10,7 +10,7 @@
 
 #### 2. Create pipeline config: 
 ```sh
-touch github-actions-demo.yml
+touch .github/workflows/github-actions-demo.yml
 ```
 
 #### 3. Write a pipeline: 
@@ -36,3 +36,5 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
 ```
+
+#### 4. Results: 
