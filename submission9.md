@@ -82,3 +82,10 @@ To add additional step, I have added one more step for the existing job:
 
 #### 3. Solving problems: 
 After I pushed step 2 the button to mannually trigeger workflow does not appear. Then I found that workflow should be in the master branch, so I copied it there.  
+
+After I put the pipeline code to master branch button appeared: 
+![alt text](github_actions_maual.png)
+
+#### 4. Results: 
+![alt text](github_actions_task2_1.png)
+![alt text](github_actions_task2_2.png)
