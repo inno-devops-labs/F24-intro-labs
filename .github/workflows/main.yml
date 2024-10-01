@@ -1,11 +1,3 @@
-name: CI/CD Pipeline
-
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch: # Manual trigger
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,24 +6,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-          
       - name: Install dependencies
         run: npm install
-
+        
       - name: Run tests
         run: npm test
-        
-      - name: Get system information
-        run: |
-          echo "Operating System: $(uname -a)"
-          echo "CPU Info:"
-          lscpu
-          echo "Memory Info:"
-          free -h
-          echo "Disk Info:"
-          df -h
-
