@@ -2,6 +2,12 @@
 
 ## Task 1: Artifact Registries Research
 
+**Artifact registries** are services designed to store and manage software artifacts like Docker container images, dependencies, packages, and binary files. They are used to:
+- Keep all versions of your software artifacts in one place.
+- Provide security features such as access control, encryption, etc.
+- Help manage versions of artifacts for easy rollback, updates, and reproducibility.
+
+
 ### AWS Artifact Registry
 
 **AWS Elastic Container Registry (ECR)**
@@ -40,6 +46,10 @@ Features:
 - Integrated with Azure DevOps for build and release pipelines.
 
 ## Task 2: Serverless Computing Platform Research
+
+**Serverless computing** abstracts away the underlying infrastructure, allowing developers to run applications without having to manage servers. 
+
+It helps to make software projects more scalable and agile.
 
 ### AWS Lambda
 
