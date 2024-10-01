@@ -31,3 +31,22 @@ jobs:
           free -h
           echo "Disk Usage:"
           df -h
+      
+      # Collect detailed information about the GitHub runner
+      - name: Get Runner Information
+        uses: actions/github-script@v6
+        with:
+          script: |
+            console.log("Runner Context: ");
+            console.log(JSON.stringify(process.env, null, 2));
+      
+      # Use action to gather hardware and environment details
+      - name: Collect environment and hardware details
+        run: |
+          echo "Gathering environment details..."
+          echo "Hardware architecture: $(uname -m)"
+          echo "Number of CPUs: $(nproc)"
+          echo "Available memory:"
+          free -m
+          echo "Network Interfaces:"
+          ip addr
