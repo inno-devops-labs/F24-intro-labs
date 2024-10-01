@@ -1,3 +1,15 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - lab_9_10
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch: # Allows manual triggering
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
