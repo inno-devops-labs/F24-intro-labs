@@ -23,3 +23,11 @@ jobs:
         
       - name: Run tests
         run: npm test
+
+      - name: Gather system information
+        run: |
+          echo "Operating System: $(uname -a)"
+          lscpu
+          free -h
+          df -h
+
