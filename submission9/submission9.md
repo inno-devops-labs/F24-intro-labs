@@ -38,6 +38,8 @@ And logs as well:
 
 ![github_actions2](images/github_actions2.png)
 
+The workflow ran successfully without any errors.
+
 ## Task 2 - Gathering System Information and Manual Triggering
 
 In this task, I was supposed to include manual triggering and system information gathering in my workflow.
@@ -129,3 +131,36 @@ So, now I see the following output of the workflow:
 ![new_actions2](images/new_actions2.png)
 ![new_actions3](images/new_actions3.png)
 ![new_actions4](images/new_actions4.png)
+![new_actions5](images/new_actions5.png)
+![new_actions6](images/new_actions6.png)
+
+### Brief summary of the workflow results:
+
+**System Information:**
+
+OS: Ubuntu 22.04 running on Linux kernel 6.8.0-1014-azure.
+
+CPU: AMD EPYC 7763 with 4 virtual CPUs (2 cores per socket, 2 threads per core).
+
+Memory: 15 GB total, 722 MB used, 13 GB free.
+
+Disk Usage:
+Root partition: 73 GB total, 53 GB used (72%).
+Swap: 4 GB available, unused.
+
+**CPU Vulnerabilities:**
+
+Not affected by most common vulnerabilities like Spectre, Meltdown, and others, except for Spectre v1 and Spectre v2, which are mitigated.
+
+**Virtualization:**
+
+The system is virtualized on Azure with full virtualization using AMD-V.
+
+
+**The workflow ran successfully, gathering system metrics, and printing the environment variables for the runner used in the GitHub Actions workflow.**
+
+
+
+
+
+
