@@ -1,8 +1,11 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
-  - push
-  - workflow_dispatch:
+  push:
+    branches:
+      - '**'
+      
+  workflow_dispatch:
     inputs:
       logLevel:
         description: "Log level"
