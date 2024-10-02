@@ -1,0 +1,34 @@
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+
+on:
+  push:  # still allow it to run on push
+  workflow_dispatch:  # this adds the manual trigger
+
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+
+      # New step: Gather system information
+      - name: Gather system information
+        run: |
+          echo "System Information:"
+          uname -a  # prints kernel name, version, machine info
+          echo "CPU Info:"
+          lscpu  # prints detailed CPU architecture info
+          echo "Memory Info:"
+          free -h  # prints available memory
+          echo "Disk Info:"
+          df -h  # prints disk usage
+      - run: echo "🍏 This job's status is ${{ job.status }}."
