@@ -74,9 +74,8 @@
 
 
 3. Observations:
-   - The pipeline successfully executed upon pushing the changes
    - No errors encountered
-
+   - The workflow was triggered successfully upon the push
 
 4. Commands to gather system information:
 
