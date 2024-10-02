@@ -1,15 +1,19 @@
-name: Task1 Workflow
+name: Task2 Workflow
 
 on:
-  push:
-    branches:
-      - lab9
+  workflow_dispatch:
+    inputs:
+      manualTrigger:
+        description: 'Trigger the workflow manually'
+        required: true
+        default: 'true'    
 
 jobs:
-  build-and-deploy:
+  print_hello_world:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Run a command
         run: echo "Hello World!"
+
