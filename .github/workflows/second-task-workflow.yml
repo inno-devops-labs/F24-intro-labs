@@ -3,17 +3,16 @@ name: Task2 Workflow
 on:
   workflow_dispatch:
     inputs:
-      manualTrigger:
-        description: 'Trigger the workflow manually'
-        required: true
-        default: 'true'    
+      name:
+        description: 'Person to greet'
+        required: false
+        default: 'World'
 
 jobs:
-  print_hello_world:
+  print-greeting:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Run a command
-        run: echo "Hello World!"
-
+        run: echo "Hello ${{ github.event.inputs.name }}!"
