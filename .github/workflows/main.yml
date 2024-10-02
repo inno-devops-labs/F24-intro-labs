@@ -7,6 +7,7 @@ on:
   pull_request:
     branches:
       - main
+  workflow_dispatch: 
 
 jobs:
   build:
@@ -26,3 +27,11 @@ jobs:
 
     - name: Run tests
       run: npm test
+
+    - name: Gather system information
+      run: |
+        echo "System information:"
+        uname -a
+        lscpu
+        free -h
+        df -h
