@@ -1,6 +1,10 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+
+on:
+  push:  # still allow it to run on push
+  workflow_dispatch:  # this adds the manual trigger
+
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -15,4 +19,16 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+
+      # New step: Gather system information
+      - name: Gather system information
+        run: |
+          echo "System Information:"
+          uname -a  # prints kernel name, version, machine info
+          echo "CPU Info:"
+          lscpu  # prints detailed CPU architecture info
+          echo "Memory Info:"
+          free -h  # prints available memory
+          echo "Disk Info:"
+          df -h  # prints disk usage
       - run: echo "🍏 This job's status is ${{ job.status }}."
