@@ -24,10 +24,10 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
       - name: Print runner information
-      run: |
-        echo "Runner OS: $RUNNER_OS"
-        echo "Runner name: $RUNNER_NAME"
-        echo "Runner version: $RUNNER_TRACKING_ID"
+        run: |
+          echo "Runner OS: $RUNNER_OS"
+          echo "Runner name: $RUNNER_NAME"
+          echo "Runner version: $RUNNER_TRACKING_ID"
 
       - name: Print CPU information
         run: lscpu
