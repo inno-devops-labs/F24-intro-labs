@@ -15,4 +15,10 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: Information gathering
+        run: |
+          echo "System information gathering..."
+          lsb_release -a
+          cat /etc/os-release
+          cat /proc/version 
       - run: echo "🍏 This job's status is ${{ job.status }}."
