@@ -12,9 +12,12 @@ TASK1
 TASK2
 
 First I tried this, 
+
 <img width="149" alt="s9t2p1" src="https://github.com/user-attachments/assets/83ee9e80-05e5-4a8d-abc5-db158d9f25cb">
+
 But for unknown for me reason it did not work. I move yml to the main branch it slightly alternate syntax.
 <img width="956" alt="s9t2p2" src="https://github.com/user-attachments/assets/3f4921aa-aa95-4865-b47d-cdeaa4cd71d0">
+
 After that "Run workflow" button finally apperared.
 <img width="984" alt="s9t2p3" src="https://github.com/user-attachments/assets/529db826-91fb-4bae-b3dd-dfcad12100ea">
 
