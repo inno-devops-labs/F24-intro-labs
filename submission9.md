@@ -40,4 +40,69 @@
 
 # Task 2
 
-1. In repository, particulary, 
+1. In repository, particulary, in lab9 branch, i created a new file: ```.github/workflows/main.yml``` with following content (I changed ```        workflow_dispatch:``` line and add some lines for including the gathering system information:
+   ```
+   name: GitHub Actions Demo
+
+   on:
+   push:
+       branches:
+         - lab9  
+        workflow_dispatch: 
+   jobs:
+   build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Gather system information
+        run: |
+          echo "System information:"
+          uname -a
+          lscpu
+          free -h
+          df -h
+   ```
+
+
+2. After that, I navigated to the Actions tab in my repository to observe the workflow execution.
+   
+   ![изображение](https://github.com/user-attachments/assets/0bd8da4f-69c1-4318-a2f8-d050120e6963)
+
+   ![изображение](https://github.com/user-attachments/assets/519d715d-e050-4cf0-afc2-f4d1938f28ad)
+
+
+3. Observations:
+   - The pipeline successfully executed upon pushing the changes
+   - No errors encountered
+
+
+4. Commands to gather system information:
+
+   ```
+   uname -a: Displays system information
+   lscpu: Shows CPU architecture information
+   free -h: Provides memory usage statistics
+   df -h: Displays disk space usage
+   ```
+
+5. Output:
+
+   - System information:
+  
+     Linux fv-az1108-283 6.8.0-1014-azure #16~22.04.1-Ubuntu SMP Thu Aug 15 21:31:41 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+
+   - CPU Information:
+
+     ![изображение](https://github.com/user-attachments/assets/c147fa92-266c-4b8b-b179-04cb43eda16e)
+
+   - Memory Usage:
+  
+     ![изображение](https://github.com/user-attachments/assets/1dd43389-8f40-4890-8fb2-6800bf355b63)
+
+   - Disk Space Usage:
+  
+     ![изображение](https://github.com/user-attachments/assets/4cb37e3d-ea49-443b-8b98-2304a93446fb)
+
+
