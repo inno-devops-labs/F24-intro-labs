@@ -22,3 +22,21 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+
+      - name: Print runner information
+      run: |
+        echo "Runner OS: $RUNNER_OS"
+        echo "Runner name: $RUNNER_NAME"
+        echo "Runner version: $RUNNER_TRACKING_ID"
+
+      - name: Print CPU information
+        run: lscpu
+
+      - name: Print memory information
+        run: free -h
+
+      - name: Print disk space information
+        run: df -h
+
+      - name: Print OS version information
+        run: uname -a
