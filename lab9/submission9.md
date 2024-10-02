@@ -33,3 +33,34 @@ jobs:
       - name: Run a command
         run: echo "Hello World!"
 ```
+
+The workflow was triggered automatically when I pushed the changes to the repository.
+
+The workflow executed successfully, and I saw the output "Hello World!" in the workflow logs.
+
+The workflow was executed on an Ubuntu runner, and the actions/checkout@v2 action was used to checkout the code.
+
+## Task 2: Gathering System Information and Manual Triggering
+
+1. Modifying `first-task-workflow.yml`
+
+```yml
+name: Task2 Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      manualTrigger:
+        description: 'Trigger the workflow manually'
+        required: true
+        default: 'true'    
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run a command
+        run: echo "Hello World!"
+```
