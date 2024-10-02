@@ -1,8 +1,5 @@
 name: Task2 Workflow
 
-# Extend your existing GitHub Actions workflow to include a [manual trigger].
-#    - Inputs for manually triggered workflows are not needed, so you can skip them.
-
 on:
   workflow_dispatch:
     inputs:
@@ -12,7 +9,7 @@ on:
         default: 'true'    
 
 jobs:
-  build-and-deploy:
+  print_hello_world:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
