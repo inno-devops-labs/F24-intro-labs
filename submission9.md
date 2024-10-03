@@ -34,7 +34,9 @@ displays information about the event, runner, branch, and repository, lists the 
 
 1) Configuring manual triggering
 
-I have added a workflow_dispatch event, which allows the workflow to be triggered manually in addition to the push event
+I have added a workflow_dispatch event, which allows the workflow to be triggered manually in addition to the push event.
+
+In order to be able to manually run the workflow, I need to put github-actions yaml file in the root branch of the repository. 
 ```
 ...
 on:
