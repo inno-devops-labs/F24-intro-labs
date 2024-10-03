@@ -60,3 +60,27 @@ run: |
 ```
 
 The output is as follows:
+```
+Collecting system information...
+
+OS and Kernel Version:
+Linux fv-az975-457 6.8.0-1014-azure #16~22.04.1-Ubuntu SMP Thu Aug 15 21:31:41 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+
+Disk Space Information:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        73G   52G   21G  72% /
+tmpfs           7.9G  172K  7.9G   1% /dev/shm
+tmpfs           3.2G  1.1M  3.2G   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+/dev/sdb15      105M  6.1M   99M   6% /boot/efi
+/dev/sda1        74G  4.1G   66G   6% /mnt
+tmpfs           1.6G   12K  1.6G   1% /run/user/1001
+
+CPU Information:
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        48 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               4
+...
+```
