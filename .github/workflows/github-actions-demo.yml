@@ -1,51 +1,27 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+on: [push, workflow_dispatch]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - uses: actions/setup@v3
+        with:
+          os: ubuntu-latest
       - name: Check out repository code
         uses: actions/checkout@v4
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-
-on:
-  workflow_dispatch:
-    inputs:
-      logLevel:
-        description: 'Log level'
-        required: true
-        default: 'warning'
-        type: choice
-        options:
-          - info
-          - warning
-          - debug
-      print_tags:
-        description: 'True to print to STDOUT'
-        required: true
-        type: boolean
-      tags:
-        description: 'Test scenario tags'
-        required: true
-        type: string
-      environment:
-        description: 'Environment to run tests against'
-        type: environment
-        required: true
-
-jobs:
-  print-tag:
-    runs-on: ubuntu-latest
-    if:  ${{ inputs.print_tags }} 
-    steps:
-      - name: Print the input tag to STDOUT
-        run: echo  The tags are ${{ inputs.tags }} 
+      - name: Gather System Information
+        run: |
+          echo "System Information:"
+          echo "OS: $(uname -a)"
+          echo "CPU: $(lscpu | grep 'Model name')"
+          echo "Memory: $(free -h | awk '/^Mem:/ {print $2}')"
+          echo "Disk Space: $(df -h . | awk '$NF=="/"{printf "%s\n","$3"}')"
+          echo "GitHub Actions Runner OS: ${runner.os}"
+          echo "GitHub Actions Runner Architecture: ${runner.architecture}"
+          echo "GitHub Actions Runner CPU Cores: ${runner.cpu_cores}"
+          echo "GitHub Actions Runner Memory: ${runner.memory}"
