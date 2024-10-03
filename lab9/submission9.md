@@ -58,8 +58,9 @@ Since the workflow triggers every time I push changes, I tested the workflow aga
     on: [push, workflow_dispatch]
     ```
 
-        - I decided to try a new configuration file from [this tutorial](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#workflow_dispatch). But then I noticed that changes are supposed to be in the existing .yml file. So, there are commits with adding a new file and deleting a new file.
-        - The workflow file is supposed to be placed in the default branch. So, I decided to complete this task in the lab9 branch and do a PR to the master with the workflow.
+    - I decided to try a new configuration file from [this tutorial](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#workflow_dispatch). But then I noticed that changes are supposed to be in the existing .yml file. So, there are commits with adding a new file and deleting a new file.
+      
+    - The workflow file is supposed to be placed in the default branch. So, I decided to complete this task in the lab9 branch and do a PR to the master with the workflow.
 
     - I did and accepted a PR from lab9 to master branch.
 
