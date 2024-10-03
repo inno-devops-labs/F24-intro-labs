@@ -1,12 +1,12 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push, workflow_dispatch]
+on:
+  push:
+  workflow_dispatch:
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-        with:
-          os: ubuntu-latest
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: List files in the repository
@@ -16,11 +16,13 @@ jobs:
       - name: Gather System Information
         run: |
           echo "System Information:"
-          echo "OS: $(uname -a)"
-          echo "CPU: $(lscpu | grep 'Model name')"
-          echo "Memory: $(free -h | awk '/^Mem:/ {print $2}')"
-          echo "Disk Space: $(df -h . | awk '$NF=="/"{printf "%s\n","$3"}')"
-          echo "GitHub Actions Runner OS: ${runner.os}"
-          echo "GitHub Actions Runner Architecture: ${runner.architecture}"
-          echo "GitHub Actions Runner CPU Cores: ${runner.cpu_cores}"
-          echo "GitHub Actions Runner Memory: ${runner.memory}"
+          uname -a
+          echo "CPU:"
+          lscpu | grep "Model name"
+          free -h
+          echo "Disk Space:"
+          df -h /
+          echo "GitHub Actions Runner OS: ${{ runner.os }}"
+          echo "GitHub Actions Runner Architecture: ${{ runner.architecture }}"
+          echo "GitHub Actions Runner CPU Cores: ${{ runner.cpu_cores }}"
+          echo "GitHub Actions Runner Memory: ${{ runner.memory }}"
