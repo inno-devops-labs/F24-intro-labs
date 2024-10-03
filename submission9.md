@@ -27,7 +27,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-
+```
 4. Committed the new file to the main branch.
 
 ## Observing the Workflow Execution
