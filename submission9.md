@@ -166,3 +166,5 @@ tmpfs           1.6G   12K  1.6G   1% /run/user/1001
 Mem:           15990         688       14219          22        1081       14932
 Swap:           4095           0        4095
 ```
+## Workflow Output: 
+![alt text](Workflow_output.png)
