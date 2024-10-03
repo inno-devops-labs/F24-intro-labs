@@ -167,4 +167,4 @@ Mem:           15990         688       14219          22        1081       14932
 Swap:           4095           0        4095
 ```
 ## Workflow Output: 
-![alt text](Workflow_output.png)
+![alt text](workflow.png)
