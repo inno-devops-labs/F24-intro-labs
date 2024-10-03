@@ -7,10 +7,11 @@ In this lab, you will explore continuous integration and continuous deployment (
 **Objective**: Set up a basic GitHub Actions workflow and observe its execution.
 
 1. **Read the Official Guide**:
+
    - Follow the official GitHub Actions [quickstart guide](https://docs.github.com/en/actions/quickstart).
    - Document all your observations, key concepts, and steps you followed in a Markdown file named `submission9.md` in the lab folder.
-
 2. **Observe the Workflow Execution**:
+
    - Push some changes to your repository and observe the GitHub Actions workflow execution.
    - Document the output, any errors encountered, and any observations in the same `submission9.md` file.
 
@@ -19,12 +20,13 @@ In this lab, you will explore continuous integration and continuous deployment (
 **Objective**: Extend your workflow to include manual triggering and system information gathering.
 
 1. **Configure a Manual Trigger**:
-   - Extend your existing GitHub Actions workflow to include a [manual trigger](https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#defining-inputs-for-manually-triggered-workflows).
+
+   - Extend your existing GitHub Actions workflow to include a [manua](https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#defining-inputs-for-manually-triggered-workflows)[l trigger](https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#defining-inputs-for-manually-triggered-workflows).
    - Inputs for manually triggered workflows are not needed, so you can skip them.
    - Document the changes made to the workflow file in the same `submission9.md` file.
    - Refer to the [official documentation](https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow) if you face any issues.
-
 2. **Gather System Information**:
+
    - Modify your workflow to include an additional step for gathering system information.
    - Use the appropriate actions and steps to collect information about the runner, hardware specifications, and operating system details.
    - Document the changes made to the workflow file and the gathered system information in the same `submission9.md` file.
