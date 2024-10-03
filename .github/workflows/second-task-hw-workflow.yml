@@ -1,0 +1,23 @@
+name: Task3 Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  get_data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Print runner OS information
+        run: uname -a
+
+      - name: Print CPU information
+        run: lscpu
+
+      - name: Print memory usage
+        run: free -h
+
+      - name: Print disk usage
+        run: df -h
