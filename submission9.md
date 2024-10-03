@@ -1,16 +1,16 @@
 # Task 1: Create Your First GitHub Actions Pipeline
 ## Set up the GitHub Actions workflow :
 
-## 1) Created a new repository called: "github-actions-demo".
-## 2) Cloned this repository locally:
-## 3) Make a new directory:
-## Command:
+### 1) Created a new repository called: "github-actions-demo".
+### 2) Cloned this repository locally:
+### 3) Make a new directory:
+### Command:
 ```bash
 mkdir -p .github/workflows
 ```
 
-## 4) Created a new file called: "github-actions-demo.yml"
-## 5) Added the following content to the file
+### 4) Created a new file called: "github-actions-demo.yml"
+### 5) Added the following content to the file
 
 ```yaml
 name: GitHub Actions Demo
@@ -33,9 +33,9 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
 ```
-## 6) Commited and pushed changes to the repository.
+### 6) Commited and pushed changes to the repository.
 
-## Observations:
+### Observations:
 - After committing the workflow file, a new workflow run was automatically triggered in the "Actions" tab, and it executed successfully.
 
 # Task 2: Gathering System Information and Manual Triggering
