@@ -26,4 +26,37 @@ jobs:
 This GitHub Actions workflow triggers on a push event and runs on an Ubuntu server. It checks out the repository code, 
 displays information about the event, runner, branch, and repository, lists the repository files, and reports the job's status.
 
-3) Commited the changes
+3) Commited and pushed the changes
+4) Test has been performed in 21 seconds and passed. In each cell I could see the output
+![img.png](img.png)
+
+# Task 2: Gathering System Information and Manual Triggering
+
+1) Configuring manual triggering
+
+I have added a workflow_dispatch event, which allows the workflow to be triggered manually in addition to the push event
+```
+...
+on:
+  push:
+  workflow_dispatch:  # Added to allow manual triggering
+...
+```
+Now I can trigger the workflow manually in the Actions tab.
+
+2) Gather System Information
+```
+...
+- name: Gather system information
+run: |
+  echo "Collecting system information..."
+  echo "OS and Kernel Version:"
+  uname -a
+  echo "Disk Space Information:"
+  df -h
+  echo "CPU Information:"
+  lscpu
+...
+```
+
+The output is as follows:
